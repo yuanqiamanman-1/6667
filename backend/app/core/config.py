@@ -33,10 +33,15 @@ class Settings(BaseSettings):
     # 跨域配置 (CORS)
     # -------------------------------------------------------------------------
     # 允许访问后端的来源列表（魔搭创空间需要允许所有来源）
-    BACKEND_CORS_ORIGINS: list[str] = os.getenv(
-        "BACKEND_CORS_ORIGINS",
-        "http://localhost:3000,http://localhost:8000,*"
-    ).split(",")
+    @property
+    def BACKEND_CORS_ORIGINS(self) -> list[str]:
+        origins_str = os.getenv(
+            "BACKEND_CORS_ORIGINS",
+            "http://localhost:3000,http://localhost:8000"
+        )
+        if origins_str == "*":
+            return ["*"]
+        return [origin.strip() for origin in origins_str.split(",") if origin.strip()]
 
     class Config:
         env_file = ".env"  # 尝试读取 .env 文件

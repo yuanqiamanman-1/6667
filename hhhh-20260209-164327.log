@@ -1,0 +1,386 @@
+[2026-02-09 16:39:20] time="2026-02-09T08:39:20Z" level=info msg="create process: bash, command: [\"bash\",\"-c\",\"set -e;mkdir -p /oss-75ac4462 \\u0026\\u0026 /bin/s3fs modelscope-studios:/eas_mount_tmp/studio_xsihan_hhhh_310407/mnt/workspace -o url=http://oss-cn-zhangjiakou-internal.aliyuncs.com -o check_cache_dir_exist -o allow_other -o auto_unmount -o entry_timeout=600 -o nonempty -o insecure_token_file -o attr_timeout=600 -o multipart_size=24 -o complement_stat -o listobjectsv2 -o token_file=/etc/ram/credentials -o dbglevel=warn -o parallel_count=48 -f /oss-75ac4462\"]"
+[2026-02-09 16:39:20] 
+[2026-02-09 16:39:20] ██████   █████  ██       ███████  █████  ███████ 
+[2026-02-09 16:39:20] ██   ██ ██   ██ ██       ██      ██   ██ ██      
+[2026-02-09 16:39:20] ██████  ███████ ██ █████ █████   ███████ ███████ 
+[2026-02-09 16:39:20] ██      ██   ██ ██       ██      ██   ██      ██ 
+[2026-02-09 16:39:20] ██      ██   ██ ██       ███████ ██   ██ ███████ 
+[2026-02-09 16:39:20] 
+[2026-02-09 16:39:20] =========== Begin Of Program (name: bash) ===========
+[2026-02-09 16:39:25] time="2026-02-09T08:39:25Z" level=info msg="create process: /bin/sh, command: [\"/bin/sh\",\"-c\",\"/usr/bin/supervisord -n -c /etc/supervisor/conf.d/supervisord.conf\"]"
+[2026-02-09 16:39:25] 
+[2026-02-09 16:39:25] ██████   █████  ██       ███████  █████  ███████ 
+[2026-02-09 16:39:25] ██   ██ ██   ██ ██       ██      ██   ██ ██      
+[2026-02-09 16:39:25] ██████  ███████ ██ █████ █████   ███████ ███████ 
+[2026-02-09 16:39:25] ██      ██   ██ ██       ██      ██   ██      ██ 
+[2026-02-09 16:39:25] ██      ██   ██ ██       ███████ ██   ██ ███████ 
+[2026-02-09 16:39:25] 
+[2026-02-09 16:39:25] =========== Begin Of Program (name: /bin/sh) ===========
+[2026-02-09 16:39:27] [/bin/sh]: 2026-02-09 08:39:27,519 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+[2026-02-09 16:39:27] [/bin/sh]: 2026-02-09 08:39:27,522 INFO supervisord started with pid 26
+[2026-02-09 16:39:28] [/bin/sh]: 2026-02-09 08:39:28,524 INFO spawned: 'backend' with pid 36
+[2026-02-09 16:39:28] [/bin/sh]: 2026-02-09 08:39:28,599 INFO spawned: 'frontend' with pid 37
+[2026-02-09 16:39:28] [/bin/sh]: 2026-02-09 08:39:28,601 INFO spawned: 'nginx' with pid 38
+[2026-02-09 16:39:29] [/bin/sh]: 2026-02-09 08:39:29,764 INFO success: backend entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 16:39:29] [/bin/sh]: 2026-02-09 08:39:29,764 INFO success: frontend entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 16:39:29] [/bin/sh]: 2026-02-09 08:39:29,764 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 16:39:29] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 510, in __call__
+[2026-02-09 16:39:29] [/bin/sh]:     field_value = self.prepare_field_value(field_name, field, field_value, value_is_complex)
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/providers/env.py", line 123, in prepare_field_value
+[2026-02-09 16:39:29] [/bin/sh]:     raise e
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/providers/env.py", line 120, in prepare_field_value
+[2026-02-09 16:39:29] [/bin/sh]:     value = self.decode_complex_value(field_name, field, value)
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 187, in decode_complex_value
+[2026-02-09 16:39:29] [/bin/sh]:     return json.loads(value)
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/json/__init__.py", line 346, in loads
+[2026-02-09 16:39:29] [/bin/sh]:     return _default_decoder.decode(s)
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/json/decoder.py", line 337, in decode
+[2026-02-09 16:39:29] [/bin/sh]:     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/json/decoder.py", line 355, in raw_decode
+[2026-02-09 16:39:29] [/bin/sh]:     raise JSONDecodeError("Expecting value", s, err.value) from None
+[2026-02-09 16:39:29] [/bin/sh]: json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-02-09 16:39:29] [/bin/sh]: 
+[2026-02-09 16:39:29] [/bin/sh]: The above exception was the direct cause of the following exception:
+[2026-02-09 16:39:29] [/bin/sh]: 
+[2026-02-09 16:39:29] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[2026-02-09 16:39:29] [/bin/sh]:     return _run_code(code, main_globals, None,
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
+[2026-02-09 16:39:29] [/bin/sh]:     exec(code, run_globals)
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+[2026-02-09 16:39:29] [/bin/sh]:     uvicorn.main()
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+[2026-02-09 16:39:29] [/bin/sh]:     return self.main(*args, **kwargs)
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1406, in main
+[2026-02-09 16:39:29] [/bin/sh]:     rv = self.invoke(ctx)
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+[2026-02-09 16:39:29] [/bin/sh]:     return ctx.invoke(self.callback, **ctx.params)
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+[2026-02-09 16:39:29] [/bin/sh]:     return callback(*args, **kwargs)
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 424, in main
+[2026-02-09 16:39:29] [/bin/sh]:     run(
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 594, in run
+[2026-02-09 16:39:29] [/bin/sh]:     server.run()
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in run
+[2026-02-09 16:39:29] [/bin/sh]:     return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/_compat.py", line 60, in asyncio_run
+[2026-02-09 16:39:29] [/bin/sh]:     return loop.run_until_complete(main)
+[2026-02-09 16:39:29] [/bin/sh]:   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 71, in serve
+[2026-02-09 16:39:29] [/bin/sh]:     await self._serve(sockets)
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 78, in _serve
+[2026-02-09 16:39:29] [/bin/sh]:     config.load()
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/config.py", line 439, in load
+[2026-02-09 16:39:29] [/bin/sh]:     self.loaded_app = import_from_string(self.app)
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+[2026-02-09 16:39:29] [/bin/sh]:     module = importlib.import_module(module_str)
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[2026-02-09 16:39:29] [/bin/sh]:     return _bootstrap._gcd_import(name[level:], package, level)
+[2026-02-09 16:39:29] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[2026-02-09 16:39:29] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[2026-02-09 16:39:29] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[2026-02-09 16:39:29] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[2026-02-09 16:39:29] [/bin/sh]:   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[2026-02-09 16:39:29] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[2026-02-09 16:39:29] [/bin/sh]:   File "/home/user/app/backend/app/main.py", line 4, in <module>
+[2026-02-09 16:39:29] [/bin/sh]:     from app.core.config import settings
+[2026-02-09 16:39:29] [/bin/sh]:   File "/home/user/app/backend/app/core/config.py", line 44, in <module>
+[2026-02-09 16:39:29] [/bin/sh]:     settings = Settings()
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/main.py", line 195, in __init__
+[2026-02-09 16:39:29] [/bin/sh]:     **__pydantic_self__._settings_build_values(
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/main.py", line 438, in _settings_build_values
+[2026-02-09 16:39:29] [/bin/sh]:     source_state = source()
+[2026-02-09 16:39:29] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 512, in __call__
+[2026-02-09 16:39:29] [/bin/sh]:     raise SettingsError(
+[2026-02-09 16:39:29] [/bin/sh]: pydantic_settings.exceptions.SettingsError: error parsing value for field "BACKEND_CORS_ORIGINS" from source "EnvSettingsSource"
+[2026-02-09 16:39:29] [/bin/sh]: 2026-02-09 08:39:29,950 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 16:39:30] [/bin/sh]: 2026-02-09 08:39:30,119 INFO spawned: 'backend' with pid 51
+[2026-02-09 16:39:30] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 510, in __call__
+[2026-02-09 16:39:30] [/bin/sh]:     field_value = self.prepare_field_value(field_name, field, field_value, value_is_complex)
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/providers/env.py", line 123, in prepare_field_value
+[2026-02-09 16:39:30] [/bin/sh]:     raise e
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/providers/env.py", line 120, in prepare_field_value
+[2026-02-09 16:39:30] [/bin/sh]:     value = self.decode_complex_value(field_name, field, value)
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 187, in decode_complex_value
+[2026-02-09 16:39:30] [/bin/sh]:     return json.loads(value)
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/json/__init__.py", line 346, in loads
+[2026-02-09 16:39:30] [/bin/sh]:     return _default_decoder.decode(s)
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/json/decoder.py", line 337, in decode
+[2026-02-09 16:39:30] [/bin/sh]:     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/json/decoder.py", line 355, in raw_decode
+[2026-02-09 16:39:30] [/bin/sh]:     raise JSONDecodeError("Expecting value", s, err.value) from None
+[2026-02-09 16:39:30] [/bin/sh]: json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-02-09 16:39:30] [/bin/sh]: 
+[2026-02-09 16:39:30] [/bin/sh]: The above exception was the direct cause of the following exception:
+[2026-02-09 16:39:30] [/bin/sh]: 
+[2026-02-09 16:39:30] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[2026-02-09 16:39:30] [/bin/sh]:     return _run_code(code, main_globals, None,
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
+[2026-02-09 16:39:30] [/bin/sh]:     exec(code, run_globals)
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+[2026-02-09 16:39:30] [/bin/sh]:     uvicorn.main()
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+[2026-02-09 16:39:30] [/bin/sh]:     return self.main(*args, **kwargs)
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1406, in main
+[2026-02-09 16:39:30] [/bin/sh]:     rv = self.invoke(ctx)
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+[2026-02-09 16:39:30] [/bin/sh]:     return ctx.invoke(self.callback, **ctx.params)
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+[2026-02-09 16:39:30] [/bin/sh]:     return callback(*args, **kwargs)
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 424, in main
+[2026-02-09 16:39:30] [/bin/sh]:     run(
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 594, in run
+[2026-02-09 16:39:30] [/bin/sh]:     server.run()
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in run
+[2026-02-09 16:39:30] [/bin/sh]:     return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/_compat.py", line 60, in asyncio_run
+[2026-02-09 16:39:30] [/bin/sh]:     return loop.run_until_complete(main)
+[2026-02-09 16:39:30] [/bin/sh]:   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 71, in serve
+[2026-02-09 16:39:30] [/bin/sh]:     await self._serve(sockets)
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 78, in _serve
+[2026-02-09 16:39:30] [/bin/sh]:     config.load()
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/config.py", line 439, in load
+[2026-02-09 16:39:30] [/bin/sh]:     self.loaded_app = import_from_string(self.app)
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+[2026-02-09 16:39:30] [/bin/sh]:     module = importlib.import_module(module_str)
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[2026-02-09 16:39:30] [/bin/sh]:     return _bootstrap._gcd_import(name[level:], package, level)
+[2026-02-09 16:39:30] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[2026-02-09 16:39:30] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[2026-02-09 16:39:30] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[2026-02-09 16:39:30] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[2026-02-09 16:39:30] [/bin/sh]:   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[2026-02-09 16:39:30] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[2026-02-09 16:39:30] [/bin/sh]:   File "/home/user/app/backend/app/main.py", line 4, in <module>
+[2026-02-09 16:39:30] [/bin/sh]:     from app.core.config import settings
+[2026-02-09 16:39:30] [/bin/sh]:   File "/home/user/app/backend/app/core/config.py", line 44, in <module>
+[2026-02-09 16:39:30] [/bin/sh]:     settings = Settings()
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/main.py", line 195, in __init__
+[2026-02-09 16:39:30] [/bin/sh]:     **__pydantic_self__._settings_build_values(
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/main.py", line 438, in _settings_build_values
+[2026-02-09 16:39:30] [/bin/sh]:     source_state = source()
+[2026-02-09 16:39:30] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 512, in __call__
+[2026-02-09 16:39:30] [/bin/sh]:     raise SettingsError(
+[2026-02-09 16:39:30] [/bin/sh]: pydantic_settings.exceptions.SettingsError: error parsing value for field "BACKEND_CORS_ORIGINS" from source "EnvSettingsSource"
+[2026-02-09 16:39:30] [/bin/sh]: 2026-02-09 08:39:30,791 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 16:39:32] [/bin/sh]: 2026-02-09 08:39:32,684 INFO spawned: 'backend' with pid 64
+[2026-02-09 16:39:33] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 510, in __call__
+[2026-02-09 16:39:33] [/bin/sh]:     field_value = self.prepare_field_value(field_name, field, field_value, value_is_complex)
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/providers/env.py", line 123, in prepare_field_value
+[2026-02-09 16:39:33] [/bin/sh]:     raise e
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/providers/env.py", line 120, in prepare_field_value
+[2026-02-09 16:39:33] [/bin/sh]:     value = self.decode_complex_value(field_name, field, value)
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 187, in decode_complex_value
+[2026-02-09 16:39:33] [/bin/sh]:     return json.loads(value)
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/json/__init__.py", line 346, in loads
+[2026-02-09 16:39:33] [/bin/sh]:     return _default_decoder.decode(s)
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/json/decoder.py", line 337, in decode
+[2026-02-09 16:39:33] [/bin/sh]:     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/json/decoder.py", line 355, in raw_decode
+[2026-02-09 16:39:33] [/bin/sh]:     raise JSONDecodeError("Expecting value", s, err.value) from None
+[2026-02-09 16:39:33] [/bin/sh]: json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-02-09 16:39:33] [/bin/sh]: 
+[2026-02-09 16:39:33] [/bin/sh]: The above exception was the direct cause of the following exception:
+[2026-02-09 16:39:33] [/bin/sh]: 
+[2026-02-09 16:39:33] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[2026-02-09 16:39:33] [/bin/sh]:     return _run_code(code, main_globals, None,
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
+[2026-02-09 16:39:33] [/bin/sh]:     exec(code, run_globals)
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+[2026-02-09 16:39:33] [/bin/sh]:     uvicorn.main()
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+[2026-02-09 16:39:33] [/bin/sh]:     return self.main(*args, **kwargs)
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1406, in main
+[2026-02-09 16:39:33] [/bin/sh]:     rv = self.invoke(ctx)
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+[2026-02-09 16:39:33] [/bin/sh]:     return ctx.invoke(self.callback, **ctx.params)
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+[2026-02-09 16:39:33] [/bin/sh]:     return callback(*args, **kwargs)
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 424, in main
+[2026-02-09 16:39:33] [/bin/sh]:     run(
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 594, in run
+[2026-02-09 16:39:33] [/bin/sh]:     server.run()
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in run
+[2026-02-09 16:39:33] [/bin/sh]:     return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/_compat.py", line 60, in asyncio_run
+[2026-02-09 16:39:33] [/bin/sh]:     return loop.run_until_complete(main)
+[2026-02-09 16:39:33] [/bin/sh]:   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 71, in serve
+[2026-02-09 16:39:33] [/bin/sh]:     await self._serve(sockets)
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 78, in _serve
+[2026-02-09 16:39:33] [/bin/sh]:     config.load()
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/config.py", line 439, in load
+[2026-02-09 16:39:33] [/bin/sh]:     self.loaded_app = import_from_string(self.app)
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+[2026-02-09 16:39:33] [/bin/sh]:     module = importlib.import_module(module_str)
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[2026-02-09 16:39:33] [/bin/sh]:     return _bootstrap._gcd_import(name[level:], package, level)
+[2026-02-09 16:39:33] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[2026-02-09 16:39:33] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[2026-02-09 16:39:33] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[2026-02-09 16:39:33] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[2026-02-09 16:39:33] [/bin/sh]:   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[2026-02-09 16:39:33] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[2026-02-09 16:39:33] [/bin/sh]:   File "/home/user/app/backend/app/main.py", line 4, in <module>
+[2026-02-09 16:39:33] [/bin/sh]:     from app.core.config import settings
+[2026-02-09 16:39:33] [/bin/sh]:   File "/home/user/app/backend/app/core/config.py", line 44, in <module>
+[2026-02-09 16:39:33] [/bin/sh]:     settings = Settings()
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/main.py", line 195, in __init__
+[2026-02-09 16:39:33] [/bin/sh]:     **__pydantic_self__._settings_build_values(
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/main.py", line 438, in _settings_build_values
+[2026-02-09 16:39:33] [/bin/sh]:     source_state = source()
+[2026-02-09 16:39:33] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 512, in __call__
+[2026-02-09 16:39:33] [/bin/sh]:     raise SettingsError(
+[2026-02-09 16:39:33] [/bin/sh]: pydantic_settings.exceptions.SettingsError: error parsing value for field "BACKEND_CORS_ORIGINS" from source "EnvSettingsSource"
+[2026-02-09 16:39:33] [/bin/sh]: 2026-02-09 08:39:33,198 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 16:39:35] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 510, in __call__
+[2026-02-09 16:39:35] [/bin/sh]:     field_value = self.prepare_field_value(field_name, field, field_value, value_is_complex)
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/providers/env.py", line 123, in prepare_field_value
+[2026-02-09 16:39:35] [/bin/sh]:     raise e
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/providers/env.py", line 120, in prepare_field_value
+[2026-02-09 16:39:35] [/bin/sh]:     value = self.decode_complex_value(field_name, field, value)
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 187, in decode_complex_value
+[2026-02-09 16:39:35] [/bin/sh]:     return json.loads(value)
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/json/__init__.py", line 346, in loads
+[2026-02-09 16:39:35] [/bin/sh]:     return _default_decoder.decode(s)
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/json/decoder.py", line 337, in decode
+[2026-02-09 16:39:35] [/bin/sh]:     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/json/decoder.py", line 355, in raw_decode
+[2026-02-09 16:39:35] [/bin/sh]:     raise JSONDecodeError("Expecting value", s, err.value) from None
+[2026-02-09 16:39:35] [/bin/sh]: json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-02-09 16:39:35] [/bin/sh]: 
+[2026-02-09 16:39:35] [/bin/sh]: The above exception was the direct cause of the following exception:
+[2026-02-09 16:39:35] [/bin/sh]: 
+[2026-02-09 16:39:35] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[2026-02-09 16:39:35] [/bin/sh]:     return _run_code(code, main_globals, None,
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
+[2026-02-09 16:39:35] [/bin/sh]:     exec(code, run_globals)
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+[2026-02-09 16:39:35] [/bin/sh]:     uvicorn.main()
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+[2026-02-09 16:39:35] [/bin/sh]:     return self.main(*args, **kwargs)
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1406, in main
+[2026-02-09 16:39:35] [/bin/sh]:     rv = self.invoke(ctx)
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+[2026-02-09 16:39:35] [/bin/sh]:     return ctx.invoke(self.callback, **ctx.params)
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+[2026-02-09 16:39:35] [/bin/sh]:     return callback(*args, **kwargs)
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 424, in main
+[2026-02-09 16:39:35] [/bin/sh]:     run(
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 594, in run
+[2026-02-09 16:39:35] [/bin/sh]:     server.run()
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in run
+[2026-02-09 16:39:35] [/bin/sh]:     return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/_compat.py", line 60, in asyncio_run
+[2026-02-09 16:39:35] [/bin/sh]:     return loop.run_until_complete(main)
+[2026-02-09 16:39:35] [/bin/sh]:   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 71, in serve
+[2026-02-09 16:39:35] [/bin/sh]:     await self._serve(sockets)
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 78, in _serve
+[2026-02-09 16:39:35] [/bin/sh]:     config.load()
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/config.py", line 439, in load
+[2026-02-09 16:39:35] [/bin/sh]:     self.loaded_app = import_from_string(self.app)
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+[2026-02-09 16:39:35] [/bin/sh]:     module = importlib.import_module(module_str)
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[2026-02-09 16:39:35] [/bin/sh]:     return _bootstrap._gcd_import(name[level:], package, level)
+[2026-02-09 16:39:35] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[2026-02-09 16:39:35] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[2026-02-09 16:39:35] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[2026-02-09 16:39:35] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[2026-02-09 16:39:35] [/bin/sh]:   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[2026-02-09 16:39:35] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[2026-02-09 16:39:35] [/bin/sh]:   File "/home/user/app/backend/app/main.py", line 4, in <module>
+[2026-02-09 16:39:35] [/bin/sh]:     from app.core.config import settings
+[2026-02-09 16:39:35] [/bin/sh]:   File "/home/user/app/backend/app/core/config.py", line 44, in <module>
+[2026-02-09 16:39:35] [/bin/sh]:     settings = Settings()
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/main.py", line 195, in __init__
+[2026-02-09 16:39:35] [/bin/sh]:     **__pydantic_self__._settings_build_values(
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/main.py", line 438, in _settings_build_values
+[2026-02-09 16:39:35] [/bin/sh]:     source_state = source()
+[2026-02-09 16:39:35] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 512, in __call__
+[2026-02-09 16:39:35] [/bin/sh]:     raise SettingsError(
+[2026-02-09 16:39:35] [/bin/sh]: pydantic_settings.exceptions.SettingsError: error parsing value for field "BACKEND_CORS_ORIGINS" from source "EnvSettingsSource"
+[2026-02-09 16:39:35] [/bin/sh]: 2026-02-09 08:39:35,671 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 16:39:35] [/bin/sh]: 2026-02-09 08:39:35,201 INFO spawned: 'backend' with pid 65
+[2026-02-09 16:39:38] [/bin/sh]: 2026-02-09 08:39:38,675 INFO spawned: 'backend' with pid 66
+[2026-02-09 16:39:39] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 510, in __call__
+[2026-02-09 16:39:39] [/bin/sh]:     field_value = self.prepare_field_value(field_name, field, field_value, value_is_complex)
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/providers/env.py", line 123, in prepare_field_value
+[2026-02-09 16:39:39] [/bin/sh]:     raise e
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/providers/env.py", line 120, in prepare_field_value
+[2026-02-09 16:39:39] [/bin/sh]:     value = self.decode_complex_value(field_name, field, value)
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 187, in decode_complex_value
+[2026-02-09 16:39:39] [/bin/sh]:     return json.loads(value)
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/json/__init__.py", line 346, in loads
+[2026-02-09 16:39:39] [/bin/sh]:     return _default_decoder.decode(s)
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/json/decoder.py", line 337, in decode
+[2026-02-09 16:39:39] [/bin/sh]:     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/json/decoder.py", line 355, in raw_decode
+[2026-02-09 16:39:39] [/bin/sh]:     raise JSONDecodeError("Expecting value", s, err.value) from None
+[2026-02-09 16:39:39] [/bin/sh]: json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-02-09 16:39:39] [/bin/sh]: 
+[2026-02-09 16:39:39] [/bin/sh]: The above exception was the direct cause of the following exception:
+[2026-02-09 16:39:39] [/bin/sh]: 
+[2026-02-09 16:39:39] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[2026-02-09 16:39:39] [/bin/sh]:     return _run_code(code, main_globals, None,
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
+[2026-02-09 16:39:39] [/bin/sh]:     exec(code, run_globals)
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+[2026-02-09 16:39:39] [/bin/sh]:     uvicorn.main()
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+[2026-02-09 16:39:39] [/bin/sh]:     return self.main(*args, **kwargs)
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1406, in main
+[2026-02-09 16:39:39] [/bin/sh]:     rv = self.invoke(ctx)
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+[2026-02-09 16:39:39] [/bin/sh]:     return ctx.invoke(self.callback, **ctx.params)
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+[2026-02-09 16:39:39] [/bin/sh]:     return callback(*args, **kwargs)
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 424, in main
+[2026-02-09 16:39:39] [/bin/sh]:     run(
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 594, in run
+[2026-02-09 16:39:39] [/bin/sh]:     server.run()
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in run
+[2026-02-09 16:39:39] [/bin/sh]:     return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/_compat.py", line 60, in asyncio_run
+[2026-02-09 16:39:39] [/bin/sh]:     return loop.run_until_complete(main)
+[2026-02-09 16:39:39] [/bin/sh]:   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 71, in serve
+[2026-02-09 16:39:39] [/bin/sh]:     await self._serve(sockets)
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 78, in _serve
+[2026-02-09 16:39:39] [/bin/sh]:     config.load()
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/config.py", line 439, in load
+[2026-02-09 16:39:39] [/bin/sh]:     self.loaded_app = import_from_string(self.app)
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+[2026-02-09 16:39:39] [/bin/sh]:     module = importlib.import_module(module_str)
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[2026-02-09 16:39:39] [/bin/sh]:     return _bootstrap._gcd_import(name[level:], package, level)
+[2026-02-09 16:39:39] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[2026-02-09 16:39:39] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[2026-02-09 16:39:39] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[2026-02-09 16:39:39] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[2026-02-09 16:39:39] [/bin/sh]:   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[2026-02-09 16:39:39] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[2026-02-09 16:39:39] [/bin/sh]:   File "/home/user/app/backend/app/main.py", line 4, in <module>
+[2026-02-09 16:39:39] [/bin/sh]:     from app.core.config import settings
+[2026-02-09 16:39:39] [/bin/sh]:   File "/home/user/app/backend/app/core/config.py", line 44, in <module>
+[2026-02-09 16:39:39] [/bin/sh]:     settings = Settings()
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/main.py", line 195, in __init__
+[2026-02-09 16:39:39] [/bin/sh]:     **__pydantic_self__._settings_build_values(
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/main.py", line 438, in _settings_build_values
+[2026-02-09 16:39:39] [/bin/sh]:     source_state = source()
+[2026-02-09 16:39:39] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic_settings/sources/base.py", line 512, in __call__
+[2026-02-09 16:39:39] [/bin/sh]:     raise SettingsError(
+[2026-02-09 16:39:39] [/bin/sh]: pydantic_settings.exceptions.SettingsError: error parsing value for field "BACKEND_CORS_ORIGINS" from source "EnvSettingsSource"
+[2026-02-09 16:39:39] [/bin/sh]: 2026-02-09 08:39:39,155 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 16:39:40] [/bin/sh]: 2026-02-09 08:39:40,156 INFO gave up: backend entered FATAL state, too many start retries too quickly

@@ -1,0 +1,615 @@
+[2026-02-09 17:03:01] time="2026-02-09T09:03:01Z" level=info msg="create process: bash, command: [\"bash\",\"-c\",\"set -e;mkdir -p /oss-75ac4462 \\u0026\\u0026 /bin/s3fs modelscope-studios:/eas_mount_tmp/studio_xsihan_hhhh_310407/mnt/workspace -o url=http://oss-cn-zhangjiakou-internal.aliyuncs.com -o check_cache_dir_exist -o allow_other -o auto_unmount -o entry_timeout=600 -o nonempty -o insecure_token_file -o attr_timeout=600 -o multipart_size=24 -o complement_stat -o listobjectsv2 -o token_file=/etc/ram/credentials -o dbglevel=warn -o parallel_count=48 -f /oss-75ac4462\"]"
+[2026-02-09 17:03:01] 
+[2026-02-09 17:03:01] ██████   █████  ██       ███████  █████  ███████ 
+[2026-02-09 17:03:01] ██   ██ ██   ██ ██       ██      ██   ██ ██      
+[2026-02-09 17:03:01] ██████  ███████ ██ █████ █████   ███████ ███████ 
+[2026-02-09 17:03:01] ██      ██   ██ ██       ██      ██   ██      ██ 
+[2026-02-09 17:03:01] ██      ██   ██ ██       ███████ ██   ██ ███████ 
+[2026-02-09 17:03:01] 
+[2026-02-09 17:03:01] =========== Begin Of Program (name: bash) ===========
+[2026-02-09 17:03:06] time="2026-02-09T09:03:06Z" level=info msg="create process: /bin/sh, command: [\"/bin/sh\",\"-c\",\"/usr/bin/supervisord -n -c /etc/supervisor/conf.d/supervisord.conf\"]"
+[2026-02-09 17:03:06] 
+[2026-02-09 17:03:06] ██████   █████  ██       ███████  █████  ███████ 
+[2026-02-09 17:03:06] ██   ██ ██   ██ ██       ██      ██   ██ ██      
+[2026-02-09 17:03:06] ██████  ███████ ██ █████ █████   ███████ ███████ 
+[2026-02-09 17:03:06] ██      ██   ██ ██       ██      ██   ██      ██ 
+[2026-02-09 17:03:06] ██      ██   ██ ██       ███████ ██   ██ ███████ 
+[2026-02-09 17:03:06] 
+[2026-02-09 17:03:06] =========== Begin Of Program (name: /bin/sh) ===========
+[2026-02-09 17:03:07] [/bin/sh]: 2026-02-09 09:03:07,620 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+[2026-02-09 17:03:07] [/bin/sh]: 2026-02-09 09:03:07,625 INFO supervisord started with pid 21
+[2026-02-09 17:03:08] [/bin/sh]: 2026-02-09 09:03:08,627 INFO spawned: 'backend' with pid 36
+[2026-02-09 17:03:08] [/bin/sh]: 2026-02-09 09:03:08,687 INFO spawned: 'frontend' with pid 37
+[2026-02-09 17:03:08] [/bin/sh]: 2026-02-09 09:03:08,689 INFO spawned: 'nginx' with pid 38
+[2026-02-09 17:03:09] [/bin/sh]: 2026-02-09 09:03:09,778 INFO success: backend entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 17:03:09] [/bin/sh]: 2026-02-09 09:03:09,778 INFO success: frontend entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 17:03:09] [/bin/sh]: 2026-02-09 09:03:09,778 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 17:03:11] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 965, in import_email_validator
+[2026-02-09 17:03:11] [/bin/sh]:     import email_validator
+[2026-02-09 17:03:11] [/bin/sh]: ModuleNotFoundError: No module named 'email_validator'
+[2026-02-09 17:03:11] [/bin/sh]: 
+[2026-02-09 17:03:11] [/bin/sh]: The above exception was the direct cause of the following exception:
+[2026-02-09 17:03:11] [/bin/sh]: 
+[2026-02-09 17:03:11] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[2026-02-09 17:03:11] [/bin/sh]:     return _run_code(code, main_globals, None,
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
+[2026-02-09 17:03:11] [/bin/sh]:     exec(code, run_globals)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+[2026-02-09 17:03:11] [/bin/sh]:     uvicorn.main()
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+[2026-02-09 17:03:11] [/bin/sh]:     return self.main(*args, **kwargs)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1406, in main
+[2026-02-09 17:03:11] [/bin/sh]:     rv = self.invoke(ctx)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+[2026-02-09 17:03:11] [/bin/sh]:     return ctx.invoke(self.callback, **ctx.params)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+[2026-02-09 17:03:11] [/bin/sh]:     return callback(*args, **kwargs)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 424, in main
+[2026-02-09 17:03:11] [/bin/sh]:     run(
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 594, in run
+[2026-02-09 17:03:11] [/bin/sh]:     server.run()
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in run
+[2026-02-09 17:03:11] [/bin/sh]:     return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/_compat.py", line 60, in asyncio_run
+[2026-02-09 17:03:11] [/bin/sh]:     return loop.run_until_complete(main)
+[2026-02-09 17:03:11] [/bin/sh]:   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 71, in serve
+[2026-02-09 17:03:11] [/bin/sh]:     await self._serve(sockets)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 78, in _serve
+[2026-02-09 17:03:11] [/bin/sh]:     config.load()
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/config.py", line 439, in load
+[2026-02-09 17:03:11] [/bin/sh]:     self.loaded_app = import_from_string(self.app)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+[2026-02-09 17:03:11] [/bin/sh]:     module = importlib.import_module(module_str)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[2026-02-09 17:03:11] [/bin/sh]:     return _bootstrap._gcd_import(name[level:], package, level)
+[2026-02-09 17:03:11] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[2026-02-09 17:03:11] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[2026-02-09 17:03:11] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[2026-02-09 17:03:11] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[2026-02-09 17:03:11] [/bin/sh]:   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[2026-02-09 17:03:11] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[2026-02-09 17:03:11] [/bin/sh]:   File "/home/user/app/backend/app/main.py", line 45, in <module>
+[2026-02-09 17:03:11] [/bin/sh]:     from app.api.v1.api import api_router
+[2026-02-09 17:03:11] [/bin/sh]:   File "/home/user/app/backend/app/api/v1/api.py", line 2, in <module>
+[2026-02-09 17:03:11] [/bin/sh]:     from app.api.v1.endpoints import auth, core, content, association, match, admin, files, aid, conversations, notifications
+[2026-02-09 17:03:11] [/bin/sh]:   File "/home/user/app/backend/app/api/v1/endpoints/auth.py", line 9, in <module>
+[2026-02-09 17:03:11] [/bin/sh]:     from app.api import deps
+[2026-02-09 17:03:11] [/bin/sh]:   File "/home/user/app/backend/app/api/deps.py", line 12, in <module>
+[2026-02-09 17:03:11] [/bin/sh]:     from app.schemas.user import TokenPayload
+[2026-02-09 17:03:11] [/bin/sh]:   File "/home/user/app/backend/app/schemas/user.py", line 27, in <module>
+[2026-02-09 17:03:11] [/bin/sh]:     class UserBase(BaseModel):
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_model_construction.py", line 255, in __new__
+[2026-02-09 17:03:11] [/bin/sh]:     complete_model_class(
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_model_construction.py", line 648, in complete_model_class
+[2026-02-09 17:03:11] [/bin/sh]:     schema = gen_schema.generate_schema(cls)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 729, in generate_schema
+[2026-02-09 17:03:11] [/bin/sh]:     schema = self._generate_schema_inner(obj)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1023, in _generate_schema_inner
+[2026-02-09 17:03:11] [/bin/sh]:     return self._model_schema(obj)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 856, in _model_schema
+[2026-02-09 17:03:11] [/bin/sh]:     {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 856, in <dictcomp>
+[2026-02-09 17:03:11] [/bin/sh]:     {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1228, in _generate_md_field_schema
+[2026-02-09 17:03:11] [/bin/sh]:     schema, metadata = self._common_field_schema(name, field_info, decorators)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1282, in _common_field_schema
+[2026-02-09 17:03:11] [/bin/sh]:     schema = self._apply_annotations(
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 2227, in _apply_annotations
+[2026-02-09 17:03:11] [/bin/sh]:     schema = get_inner_schema(source_type)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_schema_generation_shared.py", line 83, in __call__
+[2026-02-09 17:03:11] [/bin/sh]:     schema = self._handler(source_type)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 2206, in inner_handler
+[2026-02-09 17:03:11] [/bin/sh]:     schema = self._generate_schema_inner(obj)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1028, in _generate_schema_inner
+[2026-02-09 17:03:11] [/bin/sh]:     return self.match_type(obj)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1144, in match_type
+[2026-02-09 17:03:11] [/bin/sh]:     return self._match_generic_type(obj, origin)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1167, in _match_generic_type
+[2026-02-09 17:03:11] [/bin/sh]:     return self._union_schema(obj)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1327, in _union_schema
+[2026-02-09 17:03:11] [/bin/sh]:     choices.append(self.generate_schema(arg))
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 726, in generate_schema
+[2026-02-09 17:03:11] [/bin/sh]:     schema = self._generate_schema_from_get_schema_method(obj, obj)
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 919, in _generate_schema_from_get_schema_method
+[2026-02-09 17:03:11] [/bin/sh]:     schema = get_schema(
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 1005, in __get_pydantic_core_schema__
+[2026-02-09 17:03:11] [/bin/sh]:     import_email_validator()
+[2026-02-09 17:03:11] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 967, in import_email_validator
+[2026-02-09 17:03:11] [/bin/sh]:     raise ImportError("email-validator is not installed, run `pip install 'pydantic[email]'`") from e
+[2026-02-09 17:03:11] [/bin/sh]: ImportError: email-validator is not installed, run `pip install 'pydantic[email]'`
+[2026-02-09 17:03:11] [/bin/sh]: 2026-02-09 09:03:11,489 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 17:03:11] [/bin/sh]: 2026-02-09 09:03:11,729 INFO spawned: 'backend' with pid 64
+[2026-02-09 17:03:12] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 965, in import_email_validator
+[2026-02-09 17:03:12] [/bin/sh]:     import email_validator
+[2026-02-09 17:03:12] [/bin/sh]: ModuleNotFoundError: No module named 'email_validator'
+[2026-02-09 17:03:12] [/bin/sh]: 
+[2026-02-09 17:03:12] [/bin/sh]: The above exception was the direct cause of the following exception:
+[2026-02-09 17:03:12] [/bin/sh]: 
+[2026-02-09 17:03:12] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[2026-02-09 17:03:12] [/bin/sh]:     return _run_code(code, main_globals, None,
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
+[2026-02-09 17:03:12] [/bin/sh]:     exec(code, run_globals)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+[2026-02-09 17:03:12] [/bin/sh]:     uvicorn.main()
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+[2026-02-09 17:03:12] [/bin/sh]:     return self.main(*args, **kwargs)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1406, in main
+[2026-02-09 17:03:12] [/bin/sh]:     rv = self.invoke(ctx)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+[2026-02-09 17:03:12] [/bin/sh]:     return ctx.invoke(self.callback, **ctx.params)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+[2026-02-09 17:03:12] [/bin/sh]:     return callback(*args, **kwargs)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 424, in main
+[2026-02-09 17:03:12] [/bin/sh]:     run(
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 594, in run
+[2026-02-09 17:03:12] [/bin/sh]:     server.run()
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in run
+[2026-02-09 17:03:12] [/bin/sh]:     return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/_compat.py", line 60, in asyncio_run
+[2026-02-09 17:03:12] [/bin/sh]:     return loop.run_until_complete(main)
+[2026-02-09 17:03:12] [/bin/sh]:   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 71, in serve
+[2026-02-09 17:03:12] [/bin/sh]:     await self._serve(sockets)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 78, in _serve
+[2026-02-09 17:03:12] [/bin/sh]:     config.load()
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/config.py", line 439, in load
+[2026-02-09 17:03:12] [/bin/sh]:     self.loaded_app = import_from_string(self.app)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+[2026-02-09 17:03:12] [/bin/sh]:     module = importlib.import_module(module_str)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[2026-02-09 17:03:12] [/bin/sh]:     return _bootstrap._gcd_import(name[level:], package, level)
+[2026-02-09 17:03:12] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[2026-02-09 17:03:12] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[2026-02-09 17:03:12] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[2026-02-09 17:03:12] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[2026-02-09 17:03:12] [/bin/sh]:   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[2026-02-09 17:03:12] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[2026-02-09 17:03:12] [/bin/sh]:   File "/home/user/app/backend/app/main.py", line 45, in <module>
+[2026-02-09 17:03:12] [/bin/sh]:     from app.api.v1.api import api_router
+[2026-02-09 17:03:12] [/bin/sh]:   File "/home/user/app/backend/app/api/v1/api.py", line 2, in <module>
+[2026-02-09 17:03:12] [/bin/sh]:     from app.api.v1.endpoints import auth, core, content, association, match, admin, files, aid, conversations, notifications
+[2026-02-09 17:03:12] [/bin/sh]:   File "/home/user/app/backend/app/api/v1/endpoints/auth.py", line 9, in <module>
+[2026-02-09 17:03:12] [/bin/sh]:     from app.api import deps
+[2026-02-09 17:03:12] [/bin/sh]:   File "/home/user/app/backend/app/api/deps.py", line 12, in <module>
+[2026-02-09 17:03:12] [/bin/sh]:     from app.schemas.user import TokenPayload
+[2026-02-09 17:03:12] [/bin/sh]:   File "/home/user/app/backend/app/schemas/user.py", line 27, in <module>
+[2026-02-09 17:03:12] [/bin/sh]:     class UserBase(BaseModel):
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_model_construction.py", line 255, in __new__
+[2026-02-09 17:03:12] [/bin/sh]:     complete_model_class(
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_model_construction.py", line 648, in complete_model_class
+[2026-02-09 17:03:12] [/bin/sh]:     schema = gen_schema.generate_schema(cls)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 729, in generate_schema
+[2026-02-09 17:03:12] [/bin/sh]:     schema = self._generate_schema_inner(obj)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1023, in _generate_schema_inner
+[2026-02-09 17:03:12] [/bin/sh]:     return self._model_schema(obj)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 856, in _model_schema
+[2026-02-09 17:03:12] [/bin/sh]:     {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 856, in <dictcomp>
+[2026-02-09 17:03:12] [/bin/sh]:     {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1228, in _generate_md_field_schema
+[2026-02-09 17:03:12] [/bin/sh]:     schema, metadata = self._common_field_schema(name, field_info, decorators)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1282, in _common_field_schema
+[2026-02-09 17:03:12] [/bin/sh]:     schema = self._apply_annotations(
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 2227, in _apply_annotations
+[2026-02-09 17:03:12] [/bin/sh]:     schema = get_inner_schema(source_type)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_schema_generation_shared.py", line 83, in __call__
+[2026-02-09 17:03:12] [/bin/sh]:     schema = self._handler(source_type)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 2206, in inner_handler
+[2026-02-09 17:03:12] [/bin/sh]:     schema = self._generate_schema_inner(obj)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1028, in _generate_schema_inner
+[2026-02-09 17:03:12] [/bin/sh]:     return self.match_type(obj)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1144, in match_type
+[2026-02-09 17:03:12] [/bin/sh]:     return self._match_generic_type(obj, origin)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1167, in _match_generic_type
+[2026-02-09 17:03:12] [/bin/sh]:     return self._union_schema(obj)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1327, in _union_schema
+[2026-02-09 17:03:12] [/bin/sh]:     choices.append(self.generate_schema(arg))
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 726, in generate_schema
+[2026-02-09 17:03:12] [/bin/sh]:     schema = self._generate_schema_from_get_schema_method(obj, obj)
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 919, in _generate_schema_from_get_schema_method
+[2026-02-09 17:03:12] [/bin/sh]:     schema = get_schema(
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 1005, in __get_pydantic_core_schema__
+[2026-02-09 17:03:12] [/bin/sh]:     import_email_validator()
+[2026-02-09 17:03:12] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 967, in import_email_validator
+[2026-02-09 17:03:12] [/bin/sh]:     raise ImportError("email-validator is not installed, run `pip install 'pydantic[email]'`") from e
+[2026-02-09 17:03:12] [/bin/sh]: ImportError: email-validator is not installed, run `pip install 'pydantic[email]'`
+[2026-02-09 17:03:12] [/bin/sh]: 2026-02-09 09:03:12,795 INFO success: backend entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 17:03:12] [/bin/sh]: 2026-02-09 09:03:12,795 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 17:03:13] [/bin/sh]: 2026-02-09 09:03:13,798 INFO spawned: 'backend' with pid 65
+[2026-02-09 17:03:14] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 965, in import_email_validator
+[2026-02-09 17:03:14] [/bin/sh]:     import email_validator
+[2026-02-09 17:03:14] [/bin/sh]: ModuleNotFoundError: No module named 'email_validator'
+[2026-02-09 17:03:14] [/bin/sh]: 
+[2026-02-09 17:03:14] [/bin/sh]: The above exception was the direct cause of the following exception:
+[2026-02-09 17:03:14] [/bin/sh]: 
+[2026-02-09 17:03:14] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[2026-02-09 17:03:14] [/bin/sh]:     return _run_code(code, main_globals, None,
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
+[2026-02-09 17:03:14] [/bin/sh]:     exec(code, run_globals)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+[2026-02-09 17:03:14] [/bin/sh]:     uvicorn.main()
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+[2026-02-09 17:03:14] [/bin/sh]:     return self.main(*args, **kwargs)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1406, in main
+[2026-02-09 17:03:14] [/bin/sh]:     rv = self.invoke(ctx)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+[2026-02-09 17:03:14] [/bin/sh]:     return ctx.invoke(self.callback, **ctx.params)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+[2026-02-09 17:03:14] [/bin/sh]:     return callback(*args, **kwargs)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 424, in main
+[2026-02-09 17:03:14] [/bin/sh]:     run(
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 594, in run
+[2026-02-09 17:03:14] [/bin/sh]:     server.run()
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in run
+[2026-02-09 17:03:14] [/bin/sh]:     return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/_compat.py", line 60, in asyncio_run
+[2026-02-09 17:03:14] [/bin/sh]:     return loop.run_until_complete(main)
+[2026-02-09 17:03:14] [/bin/sh]:   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 71, in serve
+[2026-02-09 17:03:14] [/bin/sh]:     await self._serve(sockets)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 78, in _serve
+[2026-02-09 17:03:14] [/bin/sh]:     config.load()
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/config.py", line 439, in load
+[2026-02-09 17:03:14] [/bin/sh]:     self.loaded_app = import_from_string(self.app)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+[2026-02-09 17:03:14] [/bin/sh]:     module = importlib.import_module(module_str)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[2026-02-09 17:03:14] [/bin/sh]:     return _bootstrap._gcd_import(name[level:], package, level)
+[2026-02-09 17:03:14] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[2026-02-09 17:03:14] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[2026-02-09 17:03:14] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[2026-02-09 17:03:14] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[2026-02-09 17:03:14] [/bin/sh]:   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[2026-02-09 17:03:14] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[2026-02-09 17:03:14] [/bin/sh]:   File "/home/user/app/backend/app/main.py", line 45, in <module>
+[2026-02-09 17:03:14] [/bin/sh]:     from app.api.v1.api import api_router
+[2026-02-09 17:03:14] [/bin/sh]:   File "/home/user/app/backend/app/api/v1/api.py", line 2, in <module>
+[2026-02-09 17:03:14] [/bin/sh]:     from app.api.v1.endpoints import auth, core, content, association, match, admin, files, aid, conversations, notifications
+[2026-02-09 17:03:14] [/bin/sh]:   File "/home/user/app/backend/app/api/v1/endpoints/auth.py", line 9, in <module>
+[2026-02-09 17:03:14] [/bin/sh]:     from app.api import deps
+[2026-02-09 17:03:14] [/bin/sh]:   File "/home/user/app/backend/app/api/deps.py", line 12, in <module>
+[2026-02-09 17:03:14] [/bin/sh]:     from app.schemas.user import TokenPayload
+[2026-02-09 17:03:14] [/bin/sh]:   File "/home/user/app/backend/app/schemas/user.py", line 27, in <module>
+[2026-02-09 17:03:14] [/bin/sh]:     class UserBase(BaseModel):
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_model_construction.py", line 255, in __new__
+[2026-02-09 17:03:14] [/bin/sh]:     complete_model_class(
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_model_construction.py", line 648, in complete_model_class
+[2026-02-09 17:03:14] [/bin/sh]:     schema = gen_schema.generate_schema(cls)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 729, in generate_schema
+[2026-02-09 17:03:14] [/bin/sh]:     schema = self._generate_schema_inner(obj)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1023, in _generate_schema_inner
+[2026-02-09 17:03:14] [/bin/sh]:     return self._model_schema(obj)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 856, in _model_schema
+[2026-02-09 17:03:14] [/bin/sh]:     {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 856, in <dictcomp>
+[2026-02-09 17:03:14] [/bin/sh]:     {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1228, in _generate_md_field_schema
+[2026-02-09 17:03:14] [/bin/sh]:     schema, metadata = self._common_field_schema(name, field_info, decorators)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1282, in _common_field_schema
+[2026-02-09 17:03:14] [/bin/sh]:     schema = self._apply_annotations(
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 2227, in _apply_annotations
+[2026-02-09 17:03:14] [/bin/sh]:     schema = get_inner_schema(source_type)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_schema_generation_shared.py", line 83, in __call__
+[2026-02-09 17:03:14] [/bin/sh]:     schema = self._handler(source_type)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 2206, in inner_handler
+[2026-02-09 17:03:14] [/bin/sh]:     schema = self._generate_schema_inner(obj)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1028, in _generate_schema_inner
+[2026-02-09 17:03:14] [/bin/sh]:     return self.match_type(obj)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1144, in match_type
+[2026-02-09 17:03:14] [/bin/sh]:     return self._match_generic_type(obj, origin)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1167, in _match_generic_type
+[2026-02-09 17:03:14] [/bin/sh]:     return self._union_schema(obj)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1327, in _union_schema
+[2026-02-09 17:03:14] [/bin/sh]:     choices.append(self.generate_schema(arg))
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 726, in generate_schema
+[2026-02-09 17:03:14] [/bin/sh]:     schema = self._generate_schema_from_get_schema_method(obj, obj)
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 919, in _generate_schema_from_get_schema_method
+[2026-02-09 17:03:14] [/bin/sh]:     schema = get_schema(
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 1005, in __get_pydantic_core_schema__
+[2026-02-09 17:03:14] [/bin/sh]:     import_email_validator()
+[2026-02-09 17:03:14] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 967, in import_email_validator
+[2026-02-09 17:03:14] [/bin/sh]:     raise ImportError("email-validator is not installed, run `pip install 'pydantic[email]'`") from e
+[2026-02-09 17:03:14] [/bin/sh]: ImportError: email-validator is not installed, run `pip install 'pydantic[email]'`
+[2026-02-09 17:03:14] [/bin/sh]: 2026-02-09 09:03:14,704 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 17:03:15] [/bin/sh]: 2026-02-09 09:03:15,706 INFO spawned: 'backend' with pid 66
+[2026-02-09 17:03:16] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 965, in import_email_validator
+[2026-02-09 17:03:16] [/bin/sh]:     import email_validator
+[2026-02-09 17:03:16] [/bin/sh]: ModuleNotFoundError: No module named 'email_validator'
+[2026-02-09 17:03:16] [/bin/sh]: 
+[2026-02-09 17:03:16] [/bin/sh]: The above exception was the direct cause of the following exception:
+[2026-02-09 17:03:16] [/bin/sh]: 
+[2026-02-09 17:03:16] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[2026-02-09 17:03:16] [/bin/sh]:     return _run_code(code, main_globals, None,
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
+[2026-02-09 17:03:16] [/bin/sh]:     exec(code, run_globals)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+[2026-02-09 17:03:16] [/bin/sh]:     uvicorn.main()
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+[2026-02-09 17:03:16] [/bin/sh]:     return self.main(*args, **kwargs)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1406, in main
+[2026-02-09 17:03:16] [/bin/sh]:     rv = self.invoke(ctx)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+[2026-02-09 17:03:16] [/bin/sh]:     return ctx.invoke(self.callback, **ctx.params)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+[2026-02-09 17:03:16] [/bin/sh]:     return callback(*args, **kwargs)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 424, in main
+[2026-02-09 17:03:16] [/bin/sh]:     run(
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 594, in run
+[2026-02-09 17:03:16] [/bin/sh]:     server.run()
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in run
+[2026-02-09 17:03:16] [/bin/sh]:     return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/_compat.py", line 60, in asyncio_run
+[2026-02-09 17:03:16] [/bin/sh]:     return loop.run_until_complete(main)
+[2026-02-09 17:03:16] [/bin/sh]:   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 71, in serve
+[2026-02-09 17:03:16] [/bin/sh]:     await self._serve(sockets)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 78, in _serve
+[2026-02-09 17:03:16] [/bin/sh]:     config.load()
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/config.py", line 439, in load
+[2026-02-09 17:03:16] [/bin/sh]:     self.loaded_app = import_from_string(self.app)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+[2026-02-09 17:03:16] [/bin/sh]:     module = importlib.import_module(module_str)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[2026-02-09 17:03:16] [/bin/sh]:     return _bootstrap._gcd_import(name[level:], package, level)
+[2026-02-09 17:03:16] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[2026-02-09 17:03:16] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[2026-02-09 17:03:16] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[2026-02-09 17:03:16] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[2026-02-09 17:03:16] [/bin/sh]:   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[2026-02-09 17:03:16] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[2026-02-09 17:03:16] [/bin/sh]:   File "/home/user/app/backend/app/main.py", line 45, in <module>
+[2026-02-09 17:03:16] [/bin/sh]:     from app.api.v1.api import api_router
+[2026-02-09 17:03:16] [/bin/sh]:   File "/home/user/app/backend/app/api/v1/api.py", line 2, in <module>
+[2026-02-09 17:03:16] [/bin/sh]:     from app.api.v1.endpoints import auth, core, content, association, match, admin, files, aid, conversations, notifications
+[2026-02-09 17:03:16] [/bin/sh]:   File "/home/user/app/backend/app/api/v1/endpoints/auth.py", line 9, in <module>
+[2026-02-09 17:03:16] [/bin/sh]:     from app.api import deps
+[2026-02-09 17:03:16] [/bin/sh]:   File "/home/user/app/backend/app/api/deps.py", line 12, in <module>
+[2026-02-09 17:03:16] [/bin/sh]:     from app.schemas.user import TokenPayload
+[2026-02-09 17:03:16] [/bin/sh]:   File "/home/user/app/backend/app/schemas/user.py", line 27, in <module>
+[2026-02-09 17:03:16] [/bin/sh]:     class UserBase(BaseModel):
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_model_construction.py", line 255, in __new__
+[2026-02-09 17:03:16] [/bin/sh]:     complete_model_class(
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_model_construction.py", line 648, in complete_model_class
+[2026-02-09 17:03:16] [/bin/sh]:     schema = gen_schema.generate_schema(cls)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 729, in generate_schema
+[2026-02-09 17:03:16] [/bin/sh]:     schema = self._generate_schema_inner(obj)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1023, in _generate_schema_inner
+[2026-02-09 17:03:16] [/bin/sh]:     return self._model_schema(obj)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 856, in _model_schema
+[2026-02-09 17:03:16] [/bin/sh]:     {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 856, in <dictcomp>
+[2026-02-09 17:03:16] [/bin/sh]:     {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1228, in _generate_md_field_schema
+[2026-02-09 17:03:16] [/bin/sh]:     schema, metadata = self._common_field_schema(name, field_info, decorators)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1282, in _common_field_schema
+[2026-02-09 17:03:16] [/bin/sh]:     schema = self._apply_annotations(
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 2227, in _apply_annotations
+[2026-02-09 17:03:16] [/bin/sh]:     schema = get_inner_schema(source_type)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_schema_generation_shared.py", line 83, in __call__
+[2026-02-09 17:03:16] [/bin/sh]:     schema = self._handler(source_type)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 2206, in inner_handler
+[2026-02-09 17:03:16] [/bin/sh]:     schema = self._generate_schema_inner(obj)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1028, in _generate_schema_inner
+[2026-02-09 17:03:16] [/bin/sh]:     return self.match_type(obj)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1144, in match_type
+[2026-02-09 17:03:16] [/bin/sh]:     return self._match_generic_type(obj, origin)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1167, in _match_generic_type
+[2026-02-09 17:03:16] [/bin/sh]:     return self._union_schema(obj)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1327, in _union_schema
+[2026-02-09 17:03:16] [/bin/sh]:     choices.append(self.generate_schema(arg))
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 726, in generate_schema
+[2026-02-09 17:03:16] [/bin/sh]:     schema = self._generate_schema_from_get_schema_method(obj, obj)
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 919, in _generate_schema_from_get_schema_method
+[2026-02-09 17:03:16] [/bin/sh]:     schema = get_schema(
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 1005, in __get_pydantic_core_schema__
+[2026-02-09 17:03:16] [/bin/sh]:     import_email_validator()
+[2026-02-09 17:03:16] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 967, in import_email_validator
+[2026-02-09 17:03:16] [/bin/sh]:     raise ImportError("email-validator is not installed, run `pip install 'pydantic[email]'`") from e
+[2026-02-09 17:03:16] [/bin/sh]: ImportError: email-validator is not installed, run `pip install 'pydantic[email]'`
+[2026-02-09 17:03:16] [/bin/sh]: 2026-02-09 09:03:16,615 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 17:03:18] [/bin/sh]: 2026-02-09 09:03:18,619 INFO spawned: 'backend' with pid 67
+[2026-02-09 17:03:19] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 965, in import_email_validator
+[2026-02-09 17:03:19] [/bin/sh]:     import email_validator
+[2026-02-09 17:03:19] [/bin/sh]: ModuleNotFoundError: No module named 'email_validator'
+[2026-02-09 17:03:19] [/bin/sh]: 
+[2026-02-09 17:03:19] [/bin/sh]: The above exception was the direct cause of the following exception:
+[2026-02-09 17:03:19] [/bin/sh]: 
+[2026-02-09 17:03:19] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[2026-02-09 17:03:19] [/bin/sh]:     return _run_code(code, main_globals, None,
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
+[2026-02-09 17:03:19] [/bin/sh]:     exec(code, run_globals)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+[2026-02-09 17:03:19] [/bin/sh]:     uvicorn.main()
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+[2026-02-09 17:03:19] [/bin/sh]:     return self.main(*args, **kwargs)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1406, in main
+[2026-02-09 17:03:19] [/bin/sh]:     rv = self.invoke(ctx)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+[2026-02-09 17:03:19] [/bin/sh]:     return ctx.invoke(self.callback, **ctx.params)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+[2026-02-09 17:03:19] [/bin/sh]:     return callback(*args, **kwargs)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 424, in main
+[2026-02-09 17:03:19] [/bin/sh]:     run(
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 594, in run
+[2026-02-09 17:03:19] [/bin/sh]:     server.run()
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in run
+[2026-02-09 17:03:19] [/bin/sh]:     return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/_compat.py", line 60, in asyncio_run
+[2026-02-09 17:03:19] [/bin/sh]:     return loop.run_until_complete(main)
+[2026-02-09 17:03:19] [/bin/sh]:   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 71, in serve
+[2026-02-09 17:03:19] [/bin/sh]:     await self._serve(sockets)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 78, in _serve
+[2026-02-09 17:03:19] [/bin/sh]:     config.load()
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/config.py", line 439, in load
+[2026-02-09 17:03:19] [/bin/sh]:     self.loaded_app = import_from_string(self.app)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+[2026-02-09 17:03:19] [/bin/sh]:     module = importlib.import_module(module_str)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[2026-02-09 17:03:19] [/bin/sh]:     return _bootstrap._gcd_import(name[level:], package, level)
+[2026-02-09 17:03:19] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[2026-02-09 17:03:19] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[2026-02-09 17:03:19] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[2026-02-09 17:03:19] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[2026-02-09 17:03:19] [/bin/sh]:   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[2026-02-09 17:03:19] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[2026-02-09 17:03:19] [/bin/sh]:   File "/home/user/app/backend/app/main.py", line 45, in <module>
+[2026-02-09 17:03:19] [/bin/sh]:     from app.api.v1.api import api_router
+[2026-02-09 17:03:19] [/bin/sh]:   File "/home/user/app/backend/app/api/v1/api.py", line 2, in <module>
+[2026-02-09 17:03:19] [/bin/sh]:     from app.api.v1.endpoints import auth, core, content, association, match, admin, files, aid, conversations, notifications
+[2026-02-09 17:03:19] [/bin/sh]:   File "/home/user/app/backend/app/api/v1/endpoints/auth.py", line 9, in <module>
+[2026-02-09 17:03:19] [/bin/sh]:     from app.api import deps
+[2026-02-09 17:03:19] [/bin/sh]:   File "/home/user/app/backend/app/api/deps.py", line 12, in <module>
+[2026-02-09 17:03:19] [/bin/sh]:     from app.schemas.user import TokenPayload
+[2026-02-09 17:03:19] [/bin/sh]:   File "/home/user/app/backend/app/schemas/user.py", line 27, in <module>
+[2026-02-09 17:03:19] [/bin/sh]:     class UserBase(BaseModel):
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_model_construction.py", line 255, in __new__
+[2026-02-09 17:03:19] [/bin/sh]:     complete_model_class(
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_model_construction.py", line 648, in complete_model_class
+[2026-02-09 17:03:19] [/bin/sh]:     schema = gen_schema.generate_schema(cls)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 729, in generate_schema
+[2026-02-09 17:03:19] [/bin/sh]:     schema = self._generate_schema_inner(obj)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1023, in _generate_schema_inner
+[2026-02-09 17:03:19] [/bin/sh]:     return self._model_schema(obj)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 856, in _model_schema
+[2026-02-09 17:03:19] [/bin/sh]:     {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 856, in <dictcomp>
+[2026-02-09 17:03:19] [/bin/sh]:     {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1228, in _generate_md_field_schema
+[2026-02-09 17:03:19] [/bin/sh]:     schema, metadata = self._common_field_schema(name, field_info, decorators)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1282, in _common_field_schema
+[2026-02-09 17:03:19] [/bin/sh]:     schema = self._apply_annotations(
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 2227, in _apply_annotations
+[2026-02-09 17:03:19] [/bin/sh]:     schema = get_inner_schema(source_type)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_schema_generation_shared.py", line 83, in __call__
+[2026-02-09 17:03:19] [/bin/sh]:     schema = self._handler(source_type)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 2206, in inner_handler
+[2026-02-09 17:03:19] [/bin/sh]:     schema = self._generate_schema_inner(obj)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1028, in _generate_schema_inner
+[2026-02-09 17:03:19] [/bin/sh]:     return self.match_type(obj)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1144, in match_type
+[2026-02-09 17:03:19] [/bin/sh]:     return self._match_generic_type(obj, origin)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1167, in _match_generic_type
+[2026-02-09 17:03:19] [/bin/sh]:     return self._union_schema(obj)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1327, in _union_schema
+[2026-02-09 17:03:19] [/bin/sh]:     choices.append(self.generate_schema(arg))
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 726, in generate_schema
+[2026-02-09 17:03:19] [/bin/sh]:     schema = self._generate_schema_from_get_schema_method(obj, obj)
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 919, in _generate_schema_from_get_schema_method
+[2026-02-09 17:03:19] [/bin/sh]:     schema = get_schema(
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 1005, in __get_pydantic_core_schema__
+[2026-02-09 17:03:19] [/bin/sh]:     import_email_validator()
+[2026-02-09 17:03:19] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 967, in import_email_validator
+[2026-02-09 17:03:19] [/bin/sh]:     raise ImportError("email-validator is not installed, run `pip install 'pydantic[email]'`") from e
+[2026-02-09 17:03:19] [/bin/sh]: ImportError: email-validator is not installed, run `pip install 'pydantic[email]'`
+[2026-02-09 17:03:19] [/bin/sh]: 2026-02-09 09:03:19,531 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 17:03:22] [/bin/sh]: 2026-02-09 09:03:22,536 INFO spawned: 'backend' with pid 68
+[2026-02-09 17:03:23] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 965, in import_email_validator
+[2026-02-09 17:03:23] [/bin/sh]:     import email_validator
+[2026-02-09 17:03:23] [/bin/sh]: ModuleNotFoundError: No module named 'email_validator'
+[2026-02-09 17:03:23] [/bin/sh]: 
+[2026-02-09 17:03:23] [/bin/sh]: The above exception was the direct cause of the following exception:
+[2026-02-09 17:03:23] [/bin/sh]: 
+[2026-02-09 17:03:23] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[2026-02-09 17:03:23] [/bin/sh]:     return _run_code(code, main_globals, None,
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
+[2026-02-09 17:03:23] [/bin/sh]:     exec(code, run_globals)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+[2026-02-09 17:03:23] [/bin/sh]:     uvicorn.main()
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+[2026-02-09 17:03:23] [/bin/sh]:     return self.main(*args, **kwargs)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1406, in main
+[2026-02-09 17:03:23] [/bin/sh]:     rv = self.invoke(ctx)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+[2026-02-09 17:03:23] [/bin/sh]:     return ctx.invoke(self.callback, **ctx.params)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+[2026-02-09 17:03:23] [/bin/sh]:     return callback(*args, **kwargs)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 424, in main
+[2026-02-09 17:03:23] [/bin/sh]:     run(
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/main.py", line 594, in run
+[2026-02-09 17:03:23] [/bin/sh]:     server.run()
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in run
+[2026-02-09 17:03:23] [/bin/sh]:     return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/_compat.py", line 60, in asyncio_run
+[2026-02-09 17:03:23] [/bin/sh]:     return loop.run_until_complete(main)
+[2026-02-09 17:03:23] [/bin/sh]:   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 71, in serve
+[2026-02-09 17:03:23] [/bin/sh]:     await self._serve(sockets)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 78, in _serve
+[2026-02-09 17:03:23] [/bin/sh]:     config.load()
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/config.py", line 439, in load
+[2026-02-09 17:03:23] [/bin/sh]:     self.loaded_app = import_from_string(self.app)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+[2026-02-09 17:03:23] [/bin/sh]:     module = importlib.import_module(module_str)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[2026-02-09 17:03:23] [/bin/sh]:     return _bootstrap._gcd_import(name[level:], package, level)
+[2026-02-09 17:03:23] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[2026-02-09 17:03:23] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[2026-02-09 17:03:23] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[2026-02-09 17:03:23] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[2026-02-09 17:03:23] [/bin/sh]:   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[2026-02-09 17:03:23] [/bin/sh]:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[2026-02-09 17:03:23] [/bin/sh]:   File "/home/user/app/backend/app/main.py", line 45, in <module>
+[2026-02-09 17:03:23] [/bin/sh]:     from app.api.v1.api import api_router
+[2026-02-09 17:03:23] [/bin/sh]:   File "/home/user/app/backend/app/api/v1/api.py", line 2, in <module>
+[2026-02-09 17:03:23] [/bin/sh]:     from app.api.v1.endpoints import auth, core, content, association, match, admin, files, aid, conversations, notifications
+[2026-02-09 17:03:23] [/bin/sh]:   File "/home/user/app/backend/app/api/v1/endpoints/auth.py", line 9, in <module>
+[2026-02-09 17:03:23] [/bin/sh]:     from app.api import deps
+[2026-02-09 17:03:23] [/bin/sh]:   File "/home/user/app/backend/app/api/deps.py", line 12, in <module>
+[2026-02-09 17:03:23] [/bin/sh]:     from app.schemas.user import TokenPayload
+[2026-02-09 17:03:23] [/bin/sh]:   File "/home/user/app/backend/app/schemas/user.py", line 27, in <module>
+[2026-02-09 17:03:23] [/bin/sh]:     class UserBase(BaseModel):
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_model_construction.py", line 255, in __new__
+[2026-02-09 17:03:23] [/bin/sh]:     complete_model_class(
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_model_construction.py", line 648, in complete_model_class
+[2026-02-09 17:03:23] [/bin/sh]:     schema = gen_schema.generate_schema(cls)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 729, in generate_schema
+[2026-02-09 17:03:23] [/bin/sh]:     schema = self._generate_schema_inner(obj)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1023, in _generate_schema_inner
+[2026-02-09 17:03:23] [/bin/sh]:     return self._model_schema(obj)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 856, in _model_schema
+[2026-02-09 17:03:23] [/bin/sh]:     {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 856, in <dictcomp>
+[2026-02-09 17:03:23] [/bin/sh]:     {k: self._generate_md_field_schema(k, v, decorators) for k, v in fields.items()},
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1228, in _generate_md_field_schema
+[2026-02-09 17:03:23] [/bin/sh]:     schema, metadata = self._common_field_schema(name, field_info, decorators)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1282, in _common_field_schema
+[2026-02-09 17:03:23] [/bin/sh]:     schema = self._apply_annotations(
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 2227, in _apply_annotations
+[2026-02-09 17:03:23] [/bin/sh]:     schema = get_inner_schema(source_type)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_schema_generation_shared.py", line 83, in __call__
+[2026-02-09 17:03:23] [/bin/sh]:     schema = self._handler(source_type)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 2206, in inner_handler
+[2026-02-09 17:03:23] [/bin/sh]:     schema = self._generate_schema_inner(obj)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1028, in _generate_schema_inner
+[2026-02-09 17:03:23] [/bin/sh]:     return self.match_type(obj)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1144, in match_type
+[2026-02-09 17:03:23] [/bin/sh]:     return self._match_generic_type(obj, origin)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1167, in _match_generic_type
+[2026-02-09 17:03:23] [/bin/sh]:     return self._union_schema(obj)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 1327, in _union_schema
+[2026-02-09 17:03:23] [/bin/sh]:     choices.append(self.generate_schema(arg))
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 726, in generate_schema
+[2026-02-09 17:03:23] [/bin/sh]:     schema = self._generate_schema_from_get_schema_method(obj, obj)
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/_internal/_generate_schema.py", line 919, in _generate_schema_from_get_schema_method
+[2026-02-09 17:03:23] [/bin/sh]:     schema = get_schema(
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 1005, in __get_pydantic_core_schema__
+[2026-02-09 17:03:23] [/bin/sh]:     import_email_validator()
+[2026-02-09 17:03:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/pydantic/networks.py", line 967, in import_email_validator
+[2026-02-09 17:03:23] [/bin/sh]:     raise ImportError("email-validator is not installed, run `pip install 'pydantic[email]'`") from e
+[2026-02-09 17:03:23] [/bin/sh]: ImportError: email-validator is not installed, run `pip install 'pydantic[email]'`
+[2026-02-09 17:03:23] [/bin/sh]: 2026-02-09 09:03:23,458 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 17:03:24] [/bin/sh]: 2026-02-09 09:03:24,459 INFO gave up: backend entered FATAL state, too many start retries too quickly

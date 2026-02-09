@@ -1,0 +1,540 @@
+[executionStep begins at 2026-02-09 16:06:53]
+[Runner Group Info]:
+>> RunnerGroupId   : YPTNYsawbbYml2wF
+>> RunnerGroupName : 创空间构建-香港-linux/amd64
+[Runner Info]:
+>> ID          : fe28f111317945e492e0452f02c19e88
+>> Tenant      : be-hhjprvihpiv6ykmrn1gr5gw1
+>> Server      : https://devops-build-new.aliyuncs.com
+>> Version     : v0.3.4
+>> CommitId    : cc402c2
+>> BuildTime   : 20251027215346
+>> Workspace   : /root/yunxiao/be-hhjprvihpiv6ykmrn1gr5gw1/runner
+>> InstanceId  : i-j6c2rewo2ne2m8dao8ad
+[Build Machine Info]:
+>> OS            : linux
+>> Arch          : amd64
+>> Hostname      : iZj6c2rewo2ne2m8dao8adZ
+>> CPU           : 1 package(s), 2 core(s), 4 hardware thread(s)
+>> Memory        : 8GB physical, 8GB usable
+[Build Job Info]:
+>> ID         : 2965845d-8567-49af-949d-968d64ad1615
+>> Namespace  : be-hhjprvihpiv6ykmrn1gr5gw1
+>> Executor   : Docker
+[executionStep begins at 2026-02-09 16:06:53]
+[16:06:53] [INFO] 开始清理工作区...
+[16:06:53] [INFO] 清理完成！
+[16:06:53] [SUCCESS] 执行命令成功
+[executionStep begins at 2026-02-09 16:06:54]
+[INFO] PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+[92m[16:06:54] [SUCCESS] 获取 Credential 成功
+[1m[16:06:54] [INFO] 使用工作路径/root/workspace/repo_0
+[1m[16:06:54] [INFO] 执行步骤
+[16:06:55] 使用OSS地址：oss-cn-beijing.aliyuncs.com
+[16:06:55] [INFO] BUILD_JOB_ID=444511573
+[16:06:56] [INFO] 清理文件夹 /root/workspace /root/workspace/repo_0...
+[16:06:56] git_host = www.modelscope.cn
+[16:06:56] git clone https://www.modelscope.cn/studios/xsihan/hhhh.git  --depth=1  --branch master /root/workspace/repo_0
+[16:06:58] 正克隆到 '/root/workspace/repo_0'...
+[16:06:58] [INFO]  cd /root/workspace/repo_0
+[92m[16:06:58] [SUCCESS] 克隆成功
+[16:06:58] RECORD REPOSITORY INFO /root/workspace/repo_0
+[16:06:58] [INFO] 未获取到上一次运行commit ID
+[16:06:58] ###commitId###:04064f94787353890c4b2019865732530ccfe87d###commitMsg###:Deploy full-stack app with Zeabur PostgreSQL database                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ###commitTime###:Mon Feb 9 16:03:55 2026 +0800###commitAuthor###:yuanqiamanman-1 <2630264960@qq.com>[INFO] 获取git log成功
+[16:06:59] [INFO] 完成Commit信息收集
+[16:06:59] [INFO] 计算增量提交范围 null /root 04064f94787353890c4b2019865732530ccfe87d
+[16:06:59] 
+[16:06:59] ----------------------------------------------
+[16:06:59] 
+[92m[16:06:59] [SUCCESS] 步骤运行成功
+[executionStep begins at 2026-02-09 16:06:59]
+[INFO] PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+[92m[16:07:00] [SUCCESS] 获取 Credential 成功
+[1m[16:07:00] [INFO] 使用工作路径/root/workspace/repo_0
+[1m[16:07:00] [INFO] 执行步骤
+[16:07:00] [USER]NODEGROUP_TYPE=PM
+[16:07:00] [INFO]USE DOCKER
+[16:07:00] [INFO]PIPELINE_ID=4720107
+[16:07:00] [INFO]PIPELINE_NAME=310407/xsihan/hhhh
+[16:07:00] [INFO]BUILD_NUMBER=1
+[16:07:00] [INFO]EMPLOYEE_ID=673706c025be8f2424437d7f
+[16:07:00] [INFO]WORK_SPACE=/root/workspace
+[16:07:00] [INFO]PROJECT_DIR=/root/workspace/repo_0
+[16:07:00] [INFO]BUILD_JOB_ID=444511573
+[16:07:00] [USER]ARGS=
+[16:07:00] BUILD_ARGS=
+[16:07:00] 执行用户命令
+[16:07:00] DOCKER_USER=cr_temp_user
+[16:07:00] DOCKER_PASSWORD=eyJhdXRoVG9rZW5JZGVudGlmaWVyIjoiN2YxZWI4ZTU5MWIxOWMwMjlhYTYyYjQyZWI3ZTU0OWE2NWQ4M2Q3NjIzNmE0MmFkM2Y4OGZlM2NmYmEzYWIwMiIsImluc3RhbmNlSWQiOiJjcmktdWVlNnZoa3g0YTVicHIycCIsInRpbWUiOiIxNzcwNjI3OTI2MDAwIiwidHlwZSI6InN0cyIsInVzZXJJZCI6IjE5NzA4NTQ0ODE4MzMwNjUifQ:c1976391afc2a24f8b1a034a0d02945fda2d6782
+[16:07:00] DOCKER_DESTINATION=mshub-registry.cn-zhangjiakou.cr.aliyuncs.com/modelscope-repo/independent-service:310407-04064f94-2026-02-09-16-06-52
+[16:07:00] DOCKER_DESTINATION_VPC=mshub-registry-vpc.cn-zhangjiakou.cr.aliyuncs.com/modelscope-repo/independent-service:310407-04064f94-2026-02-09-16-06-52
+[16:07:00] DYNAMIC_OUTPUT=DOCKER_TAG
+[16:07:00] CONTEXT_PATH=/root/workspace/repo_0
+[16:07:00] DOCKER_FILE_PATH=Dockerfile
+[16:07:00] docker login
+[16:07:00] docker build  --no-cache=false --pull -t mshub-registry.cn-zhangjiakou.cr.aliyuncs.com/modelscope-repo/independent-service:310407-04064f94-2026-02-09-16-06-52 -f Dockerfile /root/workspace/repo_0
+[16:07:00] 
+[16:07:00] #1 [internal] load build definition from Dockerfile
+[16:07:00] #1       digest: sha256:d746368aad3706fbb31c5042ae61b4284863d111c541ab1498ae89d844ce208c
+[16:07:00] #1         name: "[internal] load build definition from Dockerfile"
+[16:07:00] #1      started: 2026-02-09 08:07:00.956203871 +0000 UTC
+[16:07:00] #1    completed: 2026-02-09 08:07:00.956256253 +0000 UTC
+[16:07:00] #1     duration: 52.382µs
+[16:07:00] 
+[16:07:01] 
+[16:07:01] #1 [internal] load build definition from Dockerfile
+[16:07:01] #1      started: 2026-02-09 08:07:00.957306625 +0000 UTC
+[16:07:01] #1    completed: 2026-02-09 08:07:00.991138647 +0000 UTC
+[16:07:01] #1     duration: 33.832022ms
+[16:07:01] #1 transferring dockerfile: 1.47kB done
+[16:07:01] 
+[16:07:01] 
+[16:07:01] #2 [internal] load metadata for modelscope-registry.cn-beijing.cr.aliyuncs....
+[16:07:01] #2       digest: sha256:695cf85c5df05eb2c09c97ece4b054487073ac4ad7eecfe76662a51da638ad10
+[16:07:01] #2         name: "[internal] load metadata for modelscope-registry.cn-beijing.cr.aliyuncs.com/modelscope-repo/python:3.10"
+[16:07:01] #2      started: 2026-02-09 08:07:00.996386229 +0000 UTC
+[16:07:01] #2    completed: 2026-02-09 08:07:01.456847978 +0000 UTC
+[16:07:01] #2     duration: 460.461749ms
+[16:07:01] 
+[16:07:01] 
+[16:07:01] #17 [ 1/18] FROM modelscope-registry.cn-beijing.cr.aliyuncs.com/modelscope-r...
+[16:07:01] #17       digest: sha256:026d5213fedb24957f97486107099f433d61b3d3db76d760e5455ce3ec2dd9f8
+[16:07:01] #17         name: "[ 1/18] FROM modelscope-registry.cn-beijing.cr.aliyuncs.com/modelscope-repo/python:3.10@sha256:97e3f5d14d2a0fcafce154ddbc830ded1981e41d307cc9353ec83c73b034c9b6"
+[16:07:01] #17      started: 2026-02-09 08:06:22.253834555 +0000 UTC
+[16:07:01] #17    completed: 2026-02-09 08:06:22.253995831 +0000 UTC
+[16:07:01] #17     duration: 161.276µs
+[16:07:01] #17      started: 2026-02-09 08:06:22.254382668 +0000 UTC
+[16:07:01] #17    completed: 2026-02-09 08:06:22.254426299 +0000 UTC
+[16:07:01] #17     duration: 43.631µs
+[16:07:01] #17       cached: true
+[16:07:01] #17    completed: 2026-02-09 08:06:22.254426299 +0000 UTC
+[16:07:01] #17     duration: 43.631µs
+[16:07:01] 
+[16:07:01] 
+[16:07:01] #12 [ 2/13] WORKDIR /home/user/app
+[16:07:01] #12       digest: sha256:d17014ab3ea99f55ff17e11824b55a05b5c8dd2cceee6d016086bd2c904540ed
+[16:07:01] #12         name: "[ 2/13] WORKDIR /home/user/app"
+[16:07:01] #12      started: 2026-02-09 08:07:01.498185982 +0000 UTC
+[16:07:01] #12    completed: 2026-02-09 08:07:01.498271194 +0000 UTC
+[16:07:01] #12     duration: 85.212µs
+[16:07:01] #12       cached: true
+[16:07:01] 
+[16:07:01] 
+[16:07:01] #3 [internal] load .dockerignore
+[16:07:01] #3       digest: sha256:fd1f83eed226aa2825884ddd3087b566b9a860a8df238e87c74a7afe604826da
+[16:07:01] #3         name: "[internal] load .dockerignore"
+[16:07:01] #3      started: 2026-02-09 08:07:01.458200815 +0000 UTC
+[16:07:01] #3    completed: 2026-02-09 08:07:01.458233924 +0000 UTC
+[16:07:01] #3     duration: 33.109µs
+[16:07:01] #3      started: 2026-02-09 08:07:01.459176634 +0000 UTC
+[16:07:01] #3    completed: 2026-02-09 08:07:01.492189147 +0000 UTC
+[16:07:01] #3     duration: 33.012513ms
+[16:07:01] #3 transferring context: 441B done
+[16:07:01] 
+[16:07:01] 
+[16:07:01] #10 [internal] load build context
+[16:07:01] #10       digest: sha256:ffb2623fbb6155f3eb9d6a3b3dba16803305123d01d126c375d7d0483c52aa33
+[16:07:01] #10         name: "[internal] load build context"
+[16:07:01] #10      started: 2026-02-09 08:07:01.498284586 +0000 UTC
+[16:07:01] #10    completed: 2026-02-09 08:07:01.49836342 +0000 UTC
+[16:07:01] #10     duration: 78.834µs
+[16:07:01] #10      started: 2026-02-09 08:07:01.49954774 +0000 UTC
+[16:07:01] #10    completed: 2026-02-09 08:07:01.720757431 +0000 UTC
+[16:07:01] #10     duration: 221.209691ms
+[16:07:01] #10 transferring context: 6.46MB 0.2s done
+[16:07:01] 
+[16:07:01] 
+[16:07:01] #11 [ 3/13] RUN apt-get update &&     apt-get install -y curl nginx supervis...
+[16:07:01] #11       digest: sha256:013a73c1f2d9568d95ab68c0b3badc15d90e3d4d02bb899b413fe059f32c155a
+[16:07:01] #11         name: "[ 3/13] RUN apt-get update &&     apt-get install -y curl nginx supervisor &&     curl -fsSL https://deb.nodesource.com/setup_18.x | bash - &&     apt-get install -y nodejs &&     npm install -g npm@latest &&     apt-get clean && rm -rf /var/lib/apt/lists/*"
+[16:07:01] #11      started: 2026-02-09 08:07:01.498423797 +0000 UTC
+[16:07:01] #11 0.427 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+[16:07:02] #11 0.546 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+[16:07:02] #11 0.588 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+[16:07:02] #11 0.651 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8792 kB]
+[16:07:02] #11 0.948 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+[16:07:02] #11 0.948 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [293 kB]
+[16:07:03] #11 2.225 Fetched 9346 kB in 2s (4984 kB/s)
+[16:07:04] #11 2.225 Reading package lists...
+[16:07:05] #11 3.156 Reading package lists...
+[16:07:05] #11 3.939 Building dependency tree...
+[16:07:05] #11 4.190 Reading state information...
+[16:07:06] #11 4.562 The following additional packages will be installed:
+[16:07:06] #11 4.563   iproute2 libatm1 libbpf1 libcap2 libcap2-bin libcurl3-gnutls libcurl4
+[16:07:06] #11 4.564   libcurl4-openssl-dev libmnl0 libpam-cap libxtables12 nginx-common
+[16:07:06] #11 4.565   python3-pkg-resources
+[16:07:06] #11 4.568 Suggested packages:
+[16:07:06] #11 4.568   iproute2-doc libcurl4-doc libidn-dev libldap2-dev librtmp-dev libssh2-1-dev
+[16:07:06] #11 4.568   fcgiwrap nginx-doc ssl-cert python3-setuptools supervisor-doc
+[16:07:06] #11 4.716 The following NEW packages will be installed:
+[16:07:06] #11 4.717   iproute2 libatm1 libbpf1 libcap2-bin libmnl0 libpam-cap libxtables12 nginx
+[16:07:06] #11 4.718   nginx-common python3-pkg-resources supervisor
+[16:07:06] #11 4.719 The following packages will be upgraded:
+[16:07:06] #11 4.722   curl libcap2 libcurl3-gnutls libcurl4 libcurl4-openssl-dev
+[16:07:06] #11 4.823 5 upgraded, 11 newly installed, 0 to remove and 102 not upgraded.
+[16:07:06] #11 4.823 Need to get 4214 kB of archives.
+[16:07:06] #11 4.823 After this operation, 8968 kB of additional disk space will be used.
+[16:07:06] #11 4.823 Get:1 http://deb.debian.org/debian bookworm/main amd64 python3-pkg-resources all 66.1.1-1+deb12u2 [297 kB]
+[16:07:06] #11 4.978 Get:2 http://deb.debian.org/debian bookworm/main amd64 supervisor all 4.2.5-1 [311 kB]
+[16:07:06] #11 4.980 Get:3 http://deb.debian.org/debian bookworm/main amd64 libcap2 amd64 1:2.66-4+deb12u2+b2 [27.5 kB]
+[16:07:06] #11 4.981 Get:4 http://deb.debian.org/debian bookworm/main amd64 libbpf1 amd64 1:1.1.2-0+deb12u1 [145 kB]
+[16:07:06] #11 5.023 Get:5 http://deb.debian.org/debian bookworm/main amd64 libmnl0 amd64 1.0.4-3 [12.5 kB]
+[16:07:06] #11 5.023 Get:6 http://deb.debian.org/debian bookworm/main amd64 libxtables12 amd64 1.8.9-2 [30.8 kB]
+[16:07:06] #11 5.023 Get:7 http://deb.debian.org/debian bookworm/main amd64 libcap2-bin amd64 1:2.66-4+deb12u2+b2 [35.2 kB]
+[16:07:06] #11 5.066 Get:8 http://deb.debian.org/debian bookworm/main amd64 iproute2 amd64 6.1.0-3 [1046 kB]
+[16:07:06] #11 5.108 Get:9 http://deb.debian.org/debian bookworm/main amd64 libcurl4-openssl-dev amd64 7.88.1-10+deb12u14 [492 kB]
+[16:07:06] #11 5.114 Get:10 http://deb.debian.org/debian bookworm/main amd64 curl amd64 7.88.1-10+deb12u14 [316 kB]
+[16:07:06] #11 5.117 Get:11 http://deb.debian.org/debian bookworm/main amd64 libcurl4 amd64 7.88.1-10+deb12u14 [392 kB]
+[16:07:06] #11 5.123 Get:12 http://deb.debian.org/debian bookworm/main amd64 libatm1 amd64 1:2.5.1-4+b2 [68.3 kB]
+[16:07:06] #11 5.123 Get:13 http://deb.debian.org/debian bookworm/main amd64 libcurl3-gnutls amd64 7.88.1-10+deb12u14 [386 kB]
+[16:07:06] #11 5.147 Get:14 http://deb.debian.org/debian bookworm/main amd64 libpam-cap amd64 1:2.66-4+deb12u2+b2 [15.0 kB]
+[16:07:06] #11 5.148 Get:15 http://deb.debian.org/debian bookworm/main amd64 nginx-common all 1.22.1-9+deb12u3 [112 kB]
+[16:07:06] #11 5.149 Get:16 http://deb.debian.org/debian bookworm/main amd64 nginx amd64 1.22.1-9+deb12u3 [528 kB]
+[16:07:06] #11 5.378 debconf: delaying package configuration, since apt-utils is not installed
+[16:07:06] #11 5.440 Fetched 4214 kB in 0s (10.1 MB/s)
+[16:07:07] #11 5.474 Selecting previously unselected package python3-pkg-resources.
+[16:07:07] #11 5.474 (Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 23965 files and directories currently installed.)
+[16:07:07] #11 5.496 Preparing to unpack .../python3-pkg-resources_66.1.1-1+deb12u2_all.deb ...
+[16:07:07] #11 5.501 Unpacking python3-pkg-resources (66.1.1-1+deb12u2) ...
+[16:07:07] #11 5.574 Selecting previously unselected package supervisor.
+[16:07:07] #11 5.577 Preparing to unpack .../supervisor_4.2.5-1_all.deb ...
+[16:07:07] #11 5.583 Unpacking supervisor (4.2.5-1) ...
+[16:07:07] #11 5.658 Preparing to unpack .../libcap2_1%3a2.66-4+deb12u2+b2_amd64.deb ...
+[16:07:07] #11 5.675 Unpacking libcap2:amd64 (1:2.66-4+deb12u2+b2) over (1:2.66-4+deb12u1) ...
+[16:07:07] #11 5.743 Setting up libcap2:amd64 (1:2.66-4+deb12u2+b2) ...
+[16:07:07] #11 5.797 Selecting previously unselected package libbpf1:amd64.
+[16:07:07] #11 5.797 (Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 24183 files and directories currently installed.)
+[16:07:07] #11 5.818 Preparing to unpack .../00-libbpf1_1%3a1.1.2-0+deb12u1_amd64.deb ...
+[16:07:07] #11 5.823 Unpacking libbpf1:amd64 (1:1.1.2-0+deb12u1) ...
+[16:07:07] #11 5.880 Selecting previously unselected package libmnl0:amd64.
+[16:07:07] #11 5.884 Preparing to unpack .../01-libmnl0_1.0.4-3_amd64.deb ...
+[16:07:07] #11 5.888 Unpacking libmnl0:amd64 (1.0.4-3) ...
+[16:07:07] #11 5.930 Selecting previously unselected package libxtables12:amd64.
+[16:07:07] #11 5.932 Preparing to unpack .../02-libxtables12_1.8.9-2_amd64.deb ...
+[16:07:07] #11 5.936 Unpacking libxtables12:amd64 (1.8.9-2) ...
+[16:07:07] #11 5.972 Selecting previously unselected package libcap2-bin.
+[16:07:07] #11 5.976 Preparing to unpack .../03-libcap2-bin_1%3a2.66-4+deb12u2+b2_amd64.deb ...
+[16:07:07] #11 5.980 Unpacking libcap2-bin (1:2.66-4+deb12u2+b2) ...
+[16:07:07] #11 6.027 Selecting previously unselected package iproute2.
+[16:07:07] #11 6.032 Preparing to unpack .../04-iproute2_6.1.0-3_amd64.deb ...
+[16:07:07] #11 6.038 Unpacking iproute2 (6.1.0-3) ...
+[16:07:07] #11 6.212 Preparing to unpack .../05-libcurl4-openssl-dev_7.88.1-10+deb12u14_amd64.deb ...
+[16:07:07] #11 6.223 Unpacking libcurl4-openssl-dev:amd64 (7.88.1-10+deb12u14) over (7.88.1-10+deb12u12) ...
+[16:07:07] #11 6.371 Preparing to unpack .../06-curl_7.88.1-10+deb12u14_amd64.deb ...
+[16:07:07] #11 6.382 Unpacking curl (7.88.1-10+deb12u14) over (7.88.1-10+deb12u12) ...
+[16:07:08] #11 6.470 Preparing to unpack .../07-libcurl4_7.88.1-10+deb12u14_amd64.deb ...
+[16:07:08] #11 6.483 Unpacking libcurl4:amd64 (7.88.1-10+deb12u14) over (7.88.1-10+deb12u12) ...
+[16:07:08] #11 6.587 Selecting previously unselected package libatm1:amd64.
+[16:07:08] #11 6.590 Preparing to unpack .../08-libatm1_1%3a2.5.1-4+b2_amd64.deb ...
+[16:07:08] #11 6.595 Unpacking libatm1:amd64 (1:2.5.1-4+b2) ...
+[16:07:08] #11 6.643 Preparing to unpack .../09-libcurl3-gnutls_7.88.1-10+deb12u14_amd64.deb ...
+[16:07:08] #11 6.657 Unpacking libcurl3-gnutls:amd64 (7.88.1-10+deb12u14) over (7.88.1-10+deb12u12) ...
+[16:07:08] #11 6.755 Selecting previously unselected package libpam-cap:amd64.
+[16:07:08] #11 6.759 Preparing to unpack .../10-libpam-cap_1%3a2.66-4+deb12u2+b2_amd64.deb ...
+[16:07:08] #11 6.763 Unpacking libpam-cap:amd64 (1:2.66-4+deb12u2+b2) ...
+[16:07:08] #11 6.815 Selecting previously unselected package nginx-common.
+[16:07:08] #11 6.818 Preparing to unpack .../11-nginx-common_1.22.1-9+deb12u3_all.deb ...
+[16:07:08] #11 6.828 Unpacking nginx-common (1.22.1-9+deb12u3) ...
+[16:07:08] #11 6.879 Selecting previously unselected package nginx.
+[16:07:08] #11 6.882 Preparing to unpack .../12-nginx_1.22.1-9+deb12u3_amd64.deb ...
+[16:07:08] #11 6.886 Unpacking nginx (1.22.1-9+deb12u3) ...
+[16:07:08] #11 6.986 Setting up python3-pkg-resources (66.1.1-1+deb12u2) ...
+[16:07:08] #11 7.404 Setting up supervisor (4.2.5-1) ...
+[16:07:09] #11 7.903 invoke-rc.d: could not determine current runlevel
+[16:07:09] #11 7.907 invoke-rc.d: policy-rc.d denied execution of start.
+[16:07:09] #11 8.081 Setting up nginx-common (1.22.1-9+deb12u3) ...
+[16:07:09] #11 8.244 debconf: unable to initialize frontend: Dialog
+[16:07:09] #11 8.244 debconf: (TERM is not set, so the dialog frontend is not usable.)
+[16:07:09] #11 8.244 debconf: falling back to frontend: Readline
+[16:07:09] #11 8.252 debconf: unable to initialize frontend: Readline
+[16:07:09] #11 8.252 debconf: (This frontend requires a controlling tty.)
+[16:07:09] #11 8.252 debconf: falling back to frontend: Teletype
+[16:07:10] #11 8.471 Setting up libcurl3-gnutls:amd64 (7.88.1-10+deb12u14) ...
+[16:07:10] #11 8.483 Setting up libatm1:amd64 (1:2.5.1-4+b2) ...
+[16:07:10] #11 8.497 Setting up libcap2-bin (1:2.66-4+deb12u2+b2) ...
+[16:07:10] #11 8.510 Setting up libmnl0:amd64 (1.0.4-3) ...
+[16:07:10] #11 8.521 Setting up libxtables12:amd64 (1.8.9-2) ...
+[16:07:10] #11 8.534 Setting up libcurl4:amd64 (7.88.1-10+deb12u14) ...
+[16:07:10] #11 8.549 Setting up curl (7.88.1-10+deb12u14) ...
+[16:07:10] #11 8.560 Setting up libpam-cap:amd64 (1:2.66-4+deb12u2+b2) ...
+[16:07:10] #11 8.667 debconf: unable to initialize frontend: Dialog
+[16:07:10] #11 8.667 debconf: (TERM is not set, so the dialog frontend is not usable.)
+[16:07:10] #11 8.667 debconf: falling back to frontend: Readline
+[16:07:10] #11 8.677 debconf: unable to initialize frontend: Readline
+[16:07:10] #11 8.677 debconf: (This frontend requires a controlling tty.)
+[16:07:10] #11 8.677 debconf: falling back to frontend: Teletype
+[16:07:10] #11 8.765 Setting up libbpf1:amd64 (1:1.1.2-0+deb12u1) ...
+[16:07:10] #11 8.777 Setting up iproute2 (6.1.0-3) ...
+[16:07:10] #11 8.915 debconf: unable to initialize frontend: Dialog
+[16:07:10] #11 8.915 debconf: (TERM is not set, so the dialog frontend is not usable.)
+[16:07:10] #11 8.915 debconf: falling back to frontend: Readline
+[16:07:10] #11 8.924 debconf: unable to initialize frontend: Readline
+[16:07:10] #11 8.924 debconf: (This frontend requires a controlling tty.)
+[16:07:10] #11 8.924 debconf: falling back to frontend: Teletype
+[16:07:10] #11 8.966 Setting up libcurl4-openssl-dev:amd64 (7.88.1-10+deb12u14) ...
+[16:07:10] #11 8.978 Setting up nginx (1.22.1-9+deb12u3) ...
+[16:07:10] #11 8.997 invoke-rc.d: could not determine current runlevel
+[16:07:10] #11 9.001 invoke-rc.d: policy-rc.d denied execution of start.
+[16:07:10] #11 9.007 Processing triggers for libc-bin (2.36-9+deb12u10) ...
+[16:07:10] #11 9.145 [1;31m2026-02-09 08:07:10 - 
+[16:07:10] #11 9.145 ===============================================================================
+[16:07:10] #11 9.145                             DEPRECATION WARNING                            
+[16:07:10] #11 9.145 ===============================================================================
+[16:07:10] #11 9.145 Node.js 18.x is no longer actively supported!
+[16:07:10] #11 9.145 You will not receive security or critical stability updates for this version.
+[16:07:10] #11 9.145 
+[16:07:10] #11 9.145 You should migrate to a supported version of Node.js as soon as possible.
+[16:07:10] #11 9.145 
+[16:07:10] #11 9.145 Please see https://nodesource.com/products/distributions for details about which
+[16:07:10] #11 9.145 version may be appropriate for you.
+[16:07:10] #11 9.145 
+[16:07:10] #11 9.145 The NodeSource Node.js distributions site contains
+[16:07:10] #11 9.145 information both about supported versions of Node.js and N|Solid supported Linux
+[16:07:10] #11 9.145 distributions. To learn more about usage, see:
+[16:07:10] #11 9.145 https://nodesource.com/products/distributions
+[16:07:10] #11 9.145 
+[16:07:10] #11 9.145 ===============================================================================
+[16:07:10] #11 9.145 
+[16:07:10] #11 9.145 Continuing in 10 seconds ...
+[16:07:10] #11 9.145 [0m
+[16:07:20] #11 19.15 [38;5;79m2026-02-09 08:07:20 - Installing pre-requisites[0m
+[16:07:20] #11 19.16 
+[16:07:20] #11 19.16 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+[16:07:20] #11 19.16 
+[16:07:20] #11 19.30 Hit:1 http://deb.debian.org/debian bookworm InRelease
+[16:07:20] #11 19.35 Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+[16:07:20] #11 19.40 Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+[16:07:21] #11 19.54 Reading package lists...
+[16:07:22] #11 20.34 Building dependency tree...
+[16:07:22] #11 20.59 Reading state information...
+[16:07:22] #11 20.63 102 packages can be upgraded. Run 'apt list --upgradable' to see them.
+[16:07:22] #11 20.64 
+[16:07:22] #11 20.64 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+[16:07:22] #11 20.64 
+[16:07:22] #11 20.64 Reading package lists...
+[16:07:23] #11 21.43 Building dependency tree...
+[16:07:23] #11 21.67 Reading state information...
+[16:07:23] #11 22.01 ca-certificates is already the newest version (20230311+deb12u1).
+[16:07:23] #11 22.01 curl is already the newest version (7.88.1-10+deb12u14).
+[16:07:23] #11 22.01 The following additional packages will be installed:
+[16:07:23] #11 22.01   dirmngr gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpg-wks-server
+[16:07:23] #11 22.02   gpgconf gpgsm gpgv
+[16:07:23] #11 22.02 Suggested packages:
+[16:07:23] #11 22.02   dbus-user-session libpam-systemd pinentry-gnome3 tor parcimonie xloadimage
+[16:07:23] #11 22.02   scdaemon
+[16:07:23] #11 22.09 The following NEW packages will be installed:
+[16:07:23] #11 22.09   apt-transport-https
+[16:07:23] #11 22.09 The following packages will be upgraded:
+[16:07:23] #11 22.10   dirmngr gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client
+[16:07:23] #11 22.10   gpg-wks-server gpgconf gpgsm gpgv
+[16:07:23] #11 22.28 11 upgraded, 1 newly installed, 0 to remove and 91 not upgraded.
+[16:07:23] #11 22.28 Need to get 8286 kB of archives.
+[16:07:23] #11 22.28 After this operation, 47.1 kB of additional disk space will be used.
+[16:07:23] #11 22.28 Get:1 http://deb.debian.org/debian bookworm/main amd64 gpgv amd64 2.2.40-1.1+deb12u2 [649 kB]
+[16:07:24] #11 22.66 Get:2 http://deb.debian.org/debian bookworm/main amd64 apt-transport-https all 2.6.1 [25.2 kB]
+[16:07:24] #11 22.73 Get:3 http://deb.debian.org/debian bookworm/main amd64 gpgsm amd64 2.2.40-1.1+deb12u2 [671 kB]
+[16:07:24] #11 22.75 Get:4 http://deb.debian.org/debian bookworm/main amd64 gpg-wks-client amd64 2.2.40-1.1+deb12u2 [541 kB]
+[16:07:24] #11 22.83 Get:5 http://deb.debian.org/debian bookworm/main amd64 gpg-wks-server amd64 2.2.40-1.1+deb12u2 [531 kB]
+[16:07:24] #11 22.84 Get:6 http://deb.debian.org/debian bookworm/main amd64 gpg amd64 2.2.40-1.1+deb12u2 [950 kB]
+[16:07:24] #11 22.90 Get:7 http://deb.debian.org/debian bookworm/main amd64 gnupg-utils amd64 2.2.40-1.1+deb12u2 [927 kB]
+[16:07:24] #11 22.92 Get:8 http://deb.debian.org/debian bookworm/main amd64 gnupg-l10n all 2.2.40-1.1+deb12u2 [1093 kB]
+[16:07:24] #11 22.94 Get:9 http://deb.debian.org/debian bookworm/main amd64 dirmngr amd64 2.2.40-1.1+deb12u2 [793 kB]
+[16:07:24] #11 22.98 Get:10 http://deb.debian.org/debian bookworm/main amd64 gnupg all 2.2.40-1.1+deb12u2 [846 kB]
+[16:07:24] #11 22.99 Get:11 http://deb.debian.org/debian bookworm/main amd64 gpg-agent amd64 2.2.40-1.1+deb12u2 [695 kB]
+[16:07:24] #11 23.01 Get:12 http://deb.debian.org/debian bookworm/main amd64 gpgconf amd64 2.2.40-1.1+deb12u2 [565 kB]
+[16:07:24] #11 23.20 debconf: delaying package configuration, since apt-utils is not installed
+[16:07:24] #11 23.25 Fetched 8286 kB in 1s (9177 kB/s)
+[16:07:24] #11 23.27 (Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 24475 files and directories currently installed.)
+[16:07:24] #11 23.29 Preparing to unpack .../gpgv_2.2.40-1.1+deb12u2_amd64.deb ...
+[16:07:24] #11 23.31 Unpacking gpgv (2.2.40-1.1+deb12u2) over (2.2.40-1.1) ...
+[16:07:24] #11 23.41 Setting up gpgv (2.2.40-1.1+deb12u2) ...
+[16:07:25] #11 23.46 Selecting previously unselected package apt-transport-https.
+[16:07:25] #11 23.46 (Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 24475 files and directories currently installed.)
+[16:07:25] #11 23.48 Preparing to unpack .../00-apt-transport-https_2.6.1_all.deb ...
+[16:07:25] #11 23.49 Unpacking apt-transport-https (2.6.1) ...
+[16:07:25] #11 23.53 Preparing to unpack .../01-gpgsm_2.2.40-1.1+deb12u2_amd64.deb ...
+[16:07:25] #11 23.54 Unpacking gpgsm (2.2.40-1.1+deb12u2) over (2.2.40-1.1) ...
+[16:07:25] #11 23.64 Preparing to unpack .../02-gpg-wks-client_2.2.40-1.1+deb12u2_amd64.deb ...
+[16:07:25] #11 23.65 Unpacking gpg-wks-client (2.2.40-1.1+deb12u2) over (2.2.40-1.1) ...
+[16:07:25] #11 23.74 Preparing to unpack .../03-gpg-wks-server_2.2.40-1.1+deb12u2_amd64.deb ...
+[16:07:25] #11 23.76 Unpacking gpg-wks-server (2.2.40-1.1+deb12u2) over (2.2.40-1.1) ...
+[16:07:25] #11 23.85 Preparing to unpack .../04-gpg_2.2.40-1.1+deb12u2_amd64.deb ...
+[16:07:25] #11 23.86 Unpacking gpg (2.2.40-1.1+deb12u2) over (2.2.40-1.1) ...
+[16:07:25] #11 24.01 Preparing to unpack .../05-gnupg-utils_2.2.40-1.1+deb12u2_amd64.deb ...
+[16:07:25] #11 24.03 Unpacking gnupg-utils (2.2.40-1.1+deb12u2) over (2.2.40-1.1) ...
+[16:07:25] #11 24.23 Preparing to unpack .../06-gnupg-l10n_2.2.40-1.1+deb12u2_all.deb ...
+[16:07:25] #11 24.25 Unpacking gnupg-l10n (2.2.40-1.1+deb12u2) over (2.2.40-1.1) ...
+[16:07:26] #11 24.60 Preparing to unpack .../07-dirmngr_2.2.40-1.1+deb12u2_amd64.deb ...
+[16:07:26] #11 24.66 Unpacking dirmngr (2.2.40-1.1+deb12u2) over (2.2.40-1.1) ...
+[16:07:26] #11 24.93 Preparing to unpack .../08-gnupg_2.2.40-1.1+deb12u2_all.deb ...
+[16:07:26] #11 24.94 Unpacking gnupg (2.2.40-1.1+deb12u2) over (2.2.40-1.1) ...
+[16:07:26] #11 25.15 Preparing to unpack .../09-gpg-agent_2.2.40-1.1+deb12u2_amd64.deb ...
+[16:07:26] #11 25.16 Unpacking gpg-agent (2.2.40-1.1+deb12u2) over (2.2.40-1.1) ...
+[16:07:26] #11 25.32 Preparing to unpack .../10-gpgconf_2.2.40-1.1+deb12u2_amd64.deb ...
+[16:07:26] #11 25.34 Unpacking gpgconf (2.2.40-1.1+deb12u2) over (2.2.40-1.1) ...
+[16:07:26] #11 25.44 Setting up apt-transport-https (2.6.1) ...
+[16:07:27] #11 25.46 Setting up gnupg-l10n (2.2.40-1.1+deb12u2) ...
+[16:07:27] #11 25.47 Setting up gpgconf (2.2.40-1.1+deb12u2) ...
+[16:07:27] #11 25.48 Setting up gpg (2.2.40-1.1+deb12u2) ...
+[16:07:27] #11 25.49 Setting up gnupg-utils (2.2.40-1.1+deb12u2) ...
+[16:07:27] #11 25.51 Setting up gpg-agent (2.2.40-1.1+deb12u2) ...
+[16:07:27] #11 26.14 Setting up gpgsm (2.2.40-1.1+deb12u2) ...
+[16:07:27] #11 26.16 Setting up dirmngr (2.2.40-1.1+deb12u2) ...
+[16:07:27] #11 26.35 Setting up gpg-wks-server (2.2.40-1.1+deb12u2) ...
+[16:07:27] #11 26.36 Setting up gpg-wks-client (2.2.40-1.1+deb12u2) ...
+[16:07:27] #11 26.38 Setting up gnupg (2.2.40-1.1+deb12u2) ...
+[16:07:28] #11 26.66 
+[16:07:28] #11 26.66 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+[16:07:28] #11 26.66 
+[16:07:28] #11 26.77 Get:1 https://deb.nodesource.com/node_18.x nodistro InRelease [12.1 kB]
+[16:07:28] #11 26.85 Get:2 https://deb.nodesource.com/node_18.x nodistro/main amd64 Packages [11.6 kB]
+[16:07:28] #11 26.86 Hit:3 http://deb.debian.org/debian bookworm InRelease
+[16:07:28] #11 26.94 Hit:4 http://deb.debian.org/debian bookworm-updates InRelease
+[16:07:28] #11 27.03 Hit:5 http://deb.debian.org/debian-security bookworm-security InRelease
+[16:07:28] #11 27.12 Fetched 23.7 kB in 0s (55.0 kB/s)
+[16:07:29] #11 27.12 Reading package lists...
+[16:07:29] #11 27.92 Building dependency tree...
+[16:07:29] #11 28.18 Reading state information...
+[16:07:29] #11 28.22 91 packages can be upgraded. Run 'apt list --upgradable' to see them.
+[16:07:29] #11 28.23 [1;34m2026-02-09 08:07:29 - Repository configured successfully.[0m
+[16:07:29] #11 28.23 [38;5;79m2026-02-09 08:07:29 - To install Node.js, run: apt install nodejs -y[0m
+[16:07:29] #11 28.23 [38;5;79m2026-02-09 08:07:29 - You can use N|solid Runtime as a node.js alternative[0m
+[16:07:29] #11 28.23 [1;32m2026-02-09 08:07:29 - To install N|solid Runtime, run: apt install nsolid -y 
+[16:07:29] #11 28.23 [0m
+[16:07:30] #11 28.24 Reading package lists...
+[16:07:30] #11 29.13 Building dependency tree...
+[16:07:30] #11 29.38 Reading state information...
+[16:07:31] #11 29.77 The following NEW packages will be installed:
+[16:07:31] #11 29.77   nodejs
+[16:07:31] #11 29.89 0 upgraded, 1 newly installed, 0 to remove and 91 not upgraded.
+[16:07:31] #11 29.89 Need to get 29.7 MB of archives.
+[16:07:31] #11 29.89 After this operation, 187 MB of additional disk space will be used.
+[16:07:31] #11 29.89 Get:1 https://deb.nodesource.com/node_18.x nodistro/main amd64 nodejs amd64 18.20.8-1nodesource1 [29.7 MB]
+[16:07:33] #11 31.50 debconf: delaying package configuration, since apt-utils is not installed
+[16:07:33] #11 31.54 Fetched 29.7 MB in 2s (19.5 MB/s)
+[16:07:33] #11 32.00 Selecting previously unselected package nodejs.
+[16:07:33] #11 32.00 (Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 24479 files and directories currently installed.)
+[16:07:33] #11 32.02 Preparing to unpack .../nodejs_18.20.8-1nodesource1_amd64.deb ...
+[16:07:33] #11 32.18 Unpacking nodejs (18.20.8-1nodesource1) ...
+[16:07:35] #11 34.31 Setting up nodejs (18.20.8-1nodesource1) ...
+[16:07:36] #11 35.13 npm error code EBADENGINE
+[16:07:36] #11 35.13 npm error engine Unsupported engine
+[16:07:36] #11 35.13 npm error engine Not compatible with your version of node/npm: npm@11.9.0
+[16:07:36] #11 35.13 npm error notsup Not compatible with your version of node/npm: npm@11.9.0
+[16:07:36] #11 35.13 npm error notsup Required: {"node":"^20.17.0 || >=22.9.0"}
+[16:07:36] #11 35.13 npm error notsup Actual:   {"npm":"10.8.2","node":"v18.20.8"}
+[16:07:36] #11 35.14 npm error A complete log of this run can be found in: /root/.npm/_logs/2026-02-09T08_07_35_997Z-debug-0.log
+[16:07:37] #11    completed: 2026-02-09 08:07:37.960357658 +0000 UTC
+[16:07:37] #11     duration: 36.461933861s
+[16:07:37] #11        error: "process \"/bin/sh -c apt-get update &&     apt-get install -y curl nginx supervisor &&     curl -fsSL https://deb.nodesource.com/setup_18.x | bash - &&     apt-get install -y nodejs &&     npm install -g npm@latest &&     apt-get clean && rm -rf /var/lib/apt/lists/*\" did not complete successfully: exit code: 1"
+[16:07:37] 
+[16:07:37] process "/bin/sh -c apt-get update &&     apt-get install -y curl nginx supervisor &&     curl -fsSL https://deb.nodesource.com/setup_18.x | bash - &&     apt-get install -y nodejs &&     npm install -g npm@latest &&     apt-get clean && rm -rf /var/lib/apt/lists/*" did not complete successfully: exit code: 1
+[91m[16:07:37] [ERROR] BUILD ERROR
+[91m[16:07:37] [ERROR] 444511573
+[91m[16:07:38] [ERROR] 步骤运行失败，返回码： 1
+

@@ -1,0 +1,30 @@
+[2026-02-09 17:14:02] time="2026-02-09T09:14:02Z" level=info msg="create process: bash, command: [\"bash\",\"-c\",\"set -e;mkdir -p /oss-75ac4462 \\u0026\\u0026 /bin/s3fs modelscope-studios:/eas_mount_tmp/studio_xsihan_hhhh_310407/mnt/workspace -o url=http://oss-cn-zhangjiakou-internal.aliyuncs.com -o check_cache_dir_exist -o allow_other -o auto_unmount -o entry_timeout=600 -o nonempty -o insecure_token_file -o attr_timeout=600 -o multipart_size=24 -o complement_stat -o listobjectsv2 -o token_file=/etc/ram/credentials -o dbglevel=warn -o parallel_count=48 -f /oss-75ac4462\"]"
+[2026-02-09 17:14:02] 
+[2026-02-09 17:14:02] ██████   █████  ██       ███████  █████  ███████ 
+[2026-02-09 17:14:02] ██   ██ ██   ██ ██       ██      ██   ██ ██      
+[2026-02-09 17:14:02] ██████  ███████ ██ █████ █████   ███████ ███████ 
+[2026-02-09 17:14:02] ██      ██   ██ ██       ██      ██   ██      ██ 
+[2026-02-09 17:14:02] ██      ██   ██ ██       ███████ ██   ██ ███████ 
+[2026-02-09 17:14:02] 
+[2026-02-09 17:14:02] =========== Begin Of Program (name: bash) ===========
+[2026-02-09 17:14:43] time="2026-02-09T09:14:43Z" level=info msg="create process: /bin/sh, command: [\"/bin/sh\",\"-c\",\"/usr/bin/supervisord -n -c /etc/supervisor/conf.d/supervisord.conf\"]"
+[2026-02-09 17:14:43] 
+[2026-02-09 17:14:43] ██████   █████  ██       ███████  █████  ███████ 
+[2026-02-09 17:14:43] ██   ██ ██   ██ ██       ██      ██   ██ ██      
+[2026-02-09 17:14:43] ██████  ███████ ██ █████ █████   ███████ ███████ 
+[2026-02-09 17:14:43] ██      ██   ██ ██       ██      ██   ██      ██ 
+[2026-02-09 17:14:43] ██      ██   ██ ██       ███████ ██   ██ ███████ 
+[2026-02-09 17:14:43] 
+[2026-02-09 17:14:43] =========== Begin Of Program (name: /bin/sh) ===========
+[2026-02-09 17:14:44] [/bin/sh]: 2026-02-09 09:14:44,735 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+[2026-02-09 17:14:44] [/bin/sh]: 2026-02-09 09:14:44,738 INFO supervisord started with pid 20
+[2026-02-09 17:14:45] [/bin/sh]: 2026-02-09 09:14:45,740 INFO spawned: 'backend' with pid 37
+[2026-02-09 17:14:45] [/bin/sh]: 2026-02-09 09:14:45,786 INFO spawned: 'frontend' with pid 38
+[2026-02-09 17:14:45] [/bin/sh]: 2026-02-09 09:14:45,788 INFO spawned: 'nginx' with pid 39
+[2026-02-09 17:14:46] [/bin/sh]: 2026-02-09 09:14:46,924 INFO success: backend entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 17:14:46] [/bin/sh]: 2026-02-09 09:14:46,924 INFO success: frontend entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 17:14:46] [/bin/sh]: 2026-02-09 09:14:46,924 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 17:15:20] [/bin/sh]: INFO:     Started server process [37]
+[2026-02-09 17:15:20] [/bin/sh]: INFO:     Waiting for application startup.
+[2026-02-09 17:15:20] [/bin/sh]: INFO:     Application startup complete.
+[2026-02-09 17:15:20] [/bin/sh]: INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)

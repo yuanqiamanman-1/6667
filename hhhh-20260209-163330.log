@@ -1,0 +1,36 @@
+[2026-02-09 16:24:46] time="2026-02-09T08:24:46Z" level=info msg="create process: bash, command: [\"bash\",\"-c\",\"set -e;mkdir -p /oss-75ac4462 \\u0026\\u0026 /bin/s3fs modelscope-studios:/eas_mount_tmp/studio_xsihan_hhhh_310407/mnt/workspace -o url=http://oss-cn-zhangjiakou-internal.aliyuncs.com -o check_cache_dir_exist -o allow_other -o auto_unmount -o entry_timeout=600 -o nonempty -o insecure_token_file -o attr_timeout=600 -o multipart_size=24 -o complement_stat -o listobjectsv2 -o token_file=/etc/ram/credentials -o dbglevel=warn -o parallel_count=48 -f /oss-75ac4462\"]"
+[2026-02-09 16:24:47] 
+[2026-02-09 16:24:47] ██████   █████  ██       ███████  █████  ███████ 
+[2026-02-09 16:24:47] ██   ██ ██   ██ ██       ██      ██   ██ ██      
+[2026-02-09 16:24:47] ██████  ███████ ██ █████ █████   ███████ ███████ 
+[2026-02-09 16:24:47] ██      ██   ██ ██       ██      ██   ██      ██ 
+[2026-02-09 16:24:47] ██      ██   ██ ██       ███████ ██   ██ ███████ 
+[2026-02-09 16:24:47] 
+[2026-02-09 16:24:47] =========== Begin Of Program (name: bash) ===========
+[2026-02-09 16:25:05] time="2026-02-09T08:25:05Z" level=info msg="create process: /bin/sh, command: [\"/bin/sh\",\"-c\",\"/usr/bin/supervisord -n -c /etc/supervisor/conf.d/supervisord.conf\"]"
+[2026-02-09 16:25:05] 
+[2026-02-09 16:25:05] ██████   █████  ██       ███████  █████  ███████ 
+[2026-02-09 16:25:05] ██   ██ ██   ██ ██       ██      ██   ██ ██      
+[2026-02-09 16:25:05] ██████  ███████ ██ █████ █████   ███████ ███████ 
+[2026-02-09 16:25:05] ██      ██   ██ ██       ██      ██   ██      ██ 
+[2026-02-09 16:25:05] ██      ██   ██ ██       ███████ ██   ██ ███████ 
+[2026-02-09 16:25:05] 
+[2026-02-09 16:25:05] =========== Begin Of Program (name: /bin/sh) ===========
+[2026-02-09 16:25:07] [/bin/sh]: 2026-02-09 08:25:07,038 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+[2026-02-09 16:25:07] [/bin/sh]: 2026-02-09 08:25:07,042 INFO supervisord started with pid 20
+[2026-02-09 16:25:08] [/bin/sh]: 2026-02-09 08:25:08,045 INFO spawned: 'backend' with pid 35
+[2026-02-09 16:25:08] [/bin/sh]: 2026-02-09 08:25:08,112 INFO spawned: 'frontend' with pid 36
+[2026-02-09 16:25:08] [/bin/sh]: 2026-02-09 08:25:08,114 INFO spawned: 'nginx' with pid 37
+[2026-02-09 16:25:09] [/bin/sh]: 2026-02-09 08:25:09,483 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 16:25:09] [/bin/sh]: 2026-02-09 08:25:09,496 INFO spawned: 'backend' with pid 50
+[2026-02-09 16:25:09] [/bin/sh]: 2026-02-09 08:25:09,276 INFO success: backend entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 16:25:09] [/bin/sh]: 2026-02-09 08:25:09,276 INFO success: frontend entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 16:25:09] [/bin/sh]: 2026-02-09 08:25:09,276 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 16:25:10] [/bin/sh]: 2026-02-09 08:25:10,180 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 16:25:11] [/bin/sh]: 2026-02-09 08:25:11,802 INFO spawned: 'backend' with pid 63
+[2026-02-09 16:25:12] [/bin/sh]: 2026-02-09 08:25:12,331 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 16:25:14] [/bin/sh]: 2026-02-09 08:25:14,334 INFO spawned: 'backend' with pid 64
+[2026-02-09 16:25:14] [/bin/sh]: 2026-02-09 08:25:14,848 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 16:25:17] [/bin/sh]: 2026-02-09 08:25:17,851 INFO spawned: 'backend' with pid 65
+[2026-02-09 16:25:18] [/bin/sh]: 2026-02-09 08:25:18,385 WARN exited: backend (exit status 1; not expected)
+[2026-02-09 16:25:19] [/bin/sh]: 2026-02-09 08:25:19,385 INFO gave up: backend entered FATAL state, too many start retries too quickly
