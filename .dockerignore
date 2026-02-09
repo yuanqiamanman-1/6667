@@ -1,0 +1,32 @@
+# 前端构建产物和依赖
+frontend/node_modules
+frontend/.next
+frontend/.env.local
+
+# 后端依赖
+backend/__pycache__
+backend/.venv
+backend/venv
+backend/*.pyc
+
+# 数据库文件(使用外部PostgreSQL)
+backend/sql_app.db
+backend/app.db
+
+# Git 和 IDE
+.git
+.gitignore
+.vscode
+.idea
+
+# 文档
+*.md
+方案书.md
+
+# 测试文件
+backend/test_*.py
+frontend/e2e
+frontend/test-results
+
+# 日志
+*.log

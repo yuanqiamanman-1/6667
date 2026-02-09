@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- 
+    后端 API 落地页 (Backend API Landing Page)
+    功能：作为后端服务的首页，提供项目介绍和 API 文档链接。
+    说明：这是一个静态 HTML 页面，由 FastAPI 直接返回给浏览器。
+-->
+<html lang="zh-CN">
+<head>
+    <!-- 
+        meta 标签：定义文档元数据
+        charset="UTF-8": 确保中文字符正确显示
+        viewport: 适配移动端屏幕宽度
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云助学平台后端服务 | CloudEduMatch Backend</title>
+    
+    <!-- 
+        内联 CSS 样式 (Inline CSS)
+        功能：定义页面的视觉样式
+    -->
+    <style>
+        :root {
+            /* 定义全局颜色变量 */
+            --primary-color: #3b82f6; /* 品牌蓝 */
+            --text-color: #1f2937;    /* 深灰文本 */
+            --bg-color: #f3f4f6;      /* 浅灰背景 */
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* 卡片容器：主要内容区域 */
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: #4b5563;
+        }
+
+        /* 按钮组样式 */
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* 链接按钮样式 */
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #2563eb; /* 悬停时变深 */
+        }
+
+        .btn-secondary {
+            background-color: #10b981; /* 绿色按钮 */
+        }
+        
+        .btn-secondary:hover {
+            background-color: #059669;
+        }
+        
+        /* 底部版权信息 */
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        页面主体内容
+    -->
+    <div class="container">
+        <!-- 标题区域 -->
+        <h1>☁️ 云助学平台后端服务</h1>
+        
+        <!-- 简介区域 -->
+        <p>
+            欢迎访问 CloudEduMatch 后端 API 服务。<br>
+            本服务基于 FastAPI 构建，提供用户认证、志愿匹配、社区互动等核心功能接口。<br>
+            请通过下方链接访问交互式 API 文档进行调试。
+        </p>
+        
+        <!-- 导航按钮 -->
+        <div class="btn-group">
+            <!-- 链接到 Swagger UI 文档 -->
+            <a href="/docs" class="btn">📄 Swagger API 文档</a>
+            <!-- 链接到 ReDoc 文档 -->
+            <a href="/redoc" class="btn btn-secondary">📘 ReDoc API 文档</a>
+        </div>
+        
+        <!-- 页脚 -->
+        <div class="footer">
+            <p>运行状态: 🟢 正常 | 版本: v1.0.0</p>
+        </div>
+    </div>
+</body>
+</html>
