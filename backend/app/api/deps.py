@@ -19,7 +19,7 @@ from app.schemas.user import TokenPayload
 # OAuth2 密码模式 Bearer Token
 # tokenUrl 指定前端获取 token 的接口地址
 reusable_oauth2 = OAuth2PasswordBearer(
-    tokenUrl=f"{settings.API_V1_STR}/auth/access-token"
+    tokenUrl=f"{settings.API_V1_STR}/auth/login/access-token"
 )
 
 def get_current_user(
@@ -70,7 +70,7 @@ def get_current_active_superuser(
     return current_user
 
 def get_optional_current_user(
-    db: Session = Depends(get_db), token: Optional[str] = Depends(OAuth2PasswordBearer(tokenUrl=f"{settings.API_V1_STR}/auth/access-token", auto_error=False))
+    db: Session = Depends(get_db), token: Optional[str] = Depends(OAuth2PasswordBearer(tokenUrl=f"{settings.API_V1_STR}/auth/login/access-token", auto_error=False))
 ) -> Optional[User]:
     """
     依赖项：可选的获取当前用户。

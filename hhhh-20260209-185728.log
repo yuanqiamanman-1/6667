@@ -1,0 +1,120 @@
+[2026-02-09 18:32:10] time="2026-02-09T10:32:10Z" level=info msg="create process: bash, command: [\"bash\",\"-c\",\"set -e;mkdir -p /oss-75ac4462 \\u0026\\u0026 /bin/s3fs modelscope-studios:/eas_mount_tmp/studio_xsihan_hhhh_310407/mnt/workspace -o url=http://oss-cn-zhangjiakou-internal.aliyuncs.com -o check_cache_dir_exist -o allow_other -o auto_unmount -o entry_timeout=600 -o nonempty -o insecure_token_file -o attr_timeout=600 -o multipart_size=24 -o complement_stat -o listobjectsv2 -o token_file=/etc/ram/credentials -o dbglevel=warn -o parallel_count=48 -f /oss-75ac4462\"]"
+[2026-02-09 18:32:10] 
+[2026-02-09 18:32:10] ██████   █████  ██       ███████  █████  ███████ 
+[2026-02-09 18:32:10] ██   ██ ██   ██ ██       ██      ██   ██ ██      
+[2026-02-09 18:32:10] ██████  ███████ ██ █████ █████   ███████ ███████ 
+[2026-02-09 18:32:10] ██      ██   ██ ██       ██      ██   ██      ██ 
+[2026-02-09 18:32:10] ██      ██   ██ ██       ███████ ██   ██ ███████ 
+[2026-02-09 18:32:10] 
+[2026-02-09 18:32:10] =========== Begin Of Program (name: bash) ===========
+[2026-02-09 18:32:26] time="2026-02-09T10:32:26Z" level=info msg="create process: /bin/sh, command: [\"/bin/sh\",\"-c\",\"/home/user/app/start.sh\"]"
+[2026-02-09 18:32:26] 
+[2026-02-09 18:32:26] ██████   █████  ██       ███████  █████  ███████ 
+[2026-02-09 18:32:26] ██   ██ ██   ██ ██       ██      ██   ██ ██      
+[2026-02-09 18:32:26] ██████  ███████ ██ █████ █████   ███████ ███████ 
+[2026-02-09 18:32:26] ██      ██   ██ ██       ██      ██   ██      ██ 
+[2026-02-09 18:32:26] ██      ██   ██ ██       ███████ ██   ██ ███████ 
+[2026-02-09 18:32:26] 
+[2026-02-09 18:32:26] =========== Begin Of Program (name: /bin/sh) ===========
+[2026-02-09 18:32:26] [/bin/sh]: ================================
+[2026-02-09 18:32:26] [/bin/sh]: 检查密码修复状态...
+[2026-02-09 18:32:26] [/bin/sh]: ================================
+[2026-02-09 18:32:26] [/bin/sh]: ! 未检测到密码修复标记，执行密码修复...
+[2026-02-09 18:32:26] [/bin/sh]: 检测到数据库连接，开始修复...
+[2026-02-09 18:32:41] [/bin/sh]: 正在连接到 PostgreSQL: postgresql://root:a7J2x4IKoEN6b1wRU8sFL59VGMrBqh03...
+[2026-02-09 18:32:41] [/bin/sh]: 
+[2026-02-09 18:32:41] [/bin/sh]: 使用预设密码哈希（密码: 123456）
+[2026-02-09 18:32:41] [/bin/sh]: 哈希值: $2b$12$1W7MIROVecRmGgvTYpET/urTb5dAR9NqloJhzbnilSjaTHjaMocKi
+[2026-02-09 18:32:41] [/bin/sh]: 哈希长度: 60 字节
+[2026-02-09 18:32:41] [/bin/sh]: 
+[2026-02-09 18:32:41] [/bin/sh]: 找到 52 个用户账户
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: 222222
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: superadmin
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: associationHq1
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: pku_admin
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: pku_assoc_admin
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: zt1z_admin
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: student_pku
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: teacher_pku
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: student1
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: guest
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: test_admin_13ec5a
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: nju_apply_f142e1
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: nju_admin_6097
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: nju_admin_cdf7
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_del_1769760560609
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_aid_1769760560660
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_del_1769760737014
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_u_1769760737105
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_aid_1769760737105
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_del_1769761149558
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_u_1769761149623
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_aid_1769761149625
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_aid_1769761457207
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_u_1769761457229
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_del_1769761457229
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_aid_1769761791759
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_u_1769761791773
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_del_1769761791758
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_u_1769761972403
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_del_1769761972431
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_aid_1769761972448
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_org_1769761978703
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_del_1769762137875
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_u_1769762137888
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_aid_1769762137874
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_aid_1769762211736
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_u_1769762211754
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_del_1769762211736
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_del_1769762291949
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_aid_1769762291970
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_u_1769762291972
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_org_1769762296996
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_del_1769762371748
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_aid_1769762371807
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_u_1769762371808
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_org_1769762376729
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_aid_1769762505098
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_del_1769762505102
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_u_1769762505100
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: e2e_org_1769762510000
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: 1111
+[2026-02-09 18:32:41] [/bin/sh]:   ✓ 已更新用户: 1313
+[2026-02-09 18:32:41] [/bin/sh]: 
+[2026-02-09 18:32:41] [/bin/sh]: ✅ 成功！所有用户密码已重置为: 123456
+[2026-02-09 18:32:41] [/bin/sh]: 现在可以使用任意用户名 + 密码 '123456' 登录
+[2026-02-09 18:32:41] [/bin/sh]: ✅ 密码修复成功！
+[2026-02-09 18:32:41] [/bin/sh]: ✓ 已创建标记文件，下次启动将跳过此步骤
+[2026-02-09 18:32:41] [/bin/sh]: ================================
+[2026-02-09 18:32:41] [/bin/sh]: 启动应用服务...
+[2026-02-09 18:32:41] [/bin/sh]: ================================
+[2026-02-09 18:32:42] [/bin/sh]: 2026-02-09 10:32:42,126 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+[2026-02-09 18:32:42] [/bin/sh]: 2026-02-09 10:32:42,128 INFO supervisord started with pid 20
+[2026-02-09 18:32:43] [/bin/sh]: 2026-02-09 10:32:43,130 INFO spawned: 'backend' with pid 38
+[2026-02-09 18:32:43] [/bin/sh]: 2026-02-09 10:32:43,190 INFO spawned: 'frontend' with pid 39
+[2026-02-09 18:32:43] [/bin/sh]: 2026-02-09 10:32:43,191 INFO spawned: 'nginx' with pid 40
+[2026-02-09 18:32:44] [/bin/sh]: 2026-02-09 10:32:44,305 INFO success: backend entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 18:32:44] [/bin/sh]: 2026-02-09 10:32:44,305 INFO success: frontend entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 18:32:44] [/bin/sh]: 2026-02-09 10:32:44,305 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 18:32:53] [/bin/sh]: INFO:     Started server process [38]
+[2026-02-09 18:32:53] [/bin/sh]: INFO:     Waiting for application startup.
+[2026-02-09 18:32:53] [/bin/sh]: INFO:     Application startup complete.
+[2026-02-09 18:32:53] [/bin/sh]: INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2026-02-09 18:55:41] [/bin/sh]: INFO:     172.18.0.252:0 - "POST /api/v1/auth/login/access-token HTTP/1.1" 200 OK
+[2026-02-09 18:55:41] [/bin/sh]: INFO:     172.18.0.4:0 - "GET /api/v1/match/points/balance HTTP/1.1" 401 Unauthorized
+[2026-02-09 18:55:41] [/bin/sh]: INFO:     172.18.9.79:0 - "GET /api/v1/auth/me HTTP/1.1" 401 Unauthorized
+[2026-02-09 18:55:43] [/bin/sh]: INFO:     172.18.0.15:0 - "POST /api/v1/auth/login/access-token HTTP/1.1" 200 OK
+[2026-02-09 18:55:44] [/bin/sh]: INFO:     172.18.0.42:0 - "GET /api/v1/match/points/balance HTTP/1.1" 401 Unauthorized
+[2026-02-09 18:55:44] [/bin/sh]: INFO:     172.18.0.180:0 - "GET /api/v1/auth/me HTTP/1.1" 401 Unauthorized
+[2026-02-09 18:55:46] [/bin/sh]: INFO:     172.18.0.60:0 - "POST /api/v1/auth/login/access-token HTTP/1.1" 200 OK
+[2026-02-09 18:55:46] [/bin/sh]: INFO:     172.18.1.75:0 - "GET /api/v1/match/points/balance HTTP/1.1" 401 Unauthorized
+[2026-02-09 18:55:46] [/bin/sh]: INFO:     172.18.4.219:0 - "GET /api/v1/auth/me HTTP/1.1" 401 Unauthorized
+[2026-02-09 18:56:06] [/bin/sh]: INFO:     172.18.1.9:0 - "POST /api/v1/auth/signup HTTP/1.1" 400 Bad Request
+[2026-02-09 18:56:20] [/bin/sh]: INFO:     172.18.14.56:0 - "POST /api/v1/auth/login/access-token HTTP/1.1" 400 Bad Request
+[2026-02-09 18:56:28] [/bin/sh]: INFO:     172.18.0.108:0 - "POST /api/v1/auth/login/access-token HTTP/1.1" 400 Bad Request
+[2026-02-09 18:56:35] [/bin/sh]: INFO:     172.18.0.14:0 - "POST /api/v1/auth/login/access-token HTTP/1.1" 200 OK
+[2026-02-09 18:56:36] [/bin/sh]: INFO:     172.18.0.78:0 - "GET /api/v1/auth/me HTTP/1.1" 401 Unauthorized
+[2026-02-09 18:56:36] [/bin/sh]: INFO:     172.18.0.43:0 - "GET /api/v1/match/points/balance HTTP/1.1" 401 Unauthorized
+[2026-02-09 18:56:46] [/bin/sh]: INFO:     172.18.1.51:0 - "POST /api/v1/auth/login/access-token HTTP/1.1" 200 OK
+[2026-02-09 18:56:46] [/bin/sh]: INFO:     172.18.14.56:0 - "GET /api/v1/auth/me HTTP/1.1" 401 Unauthorized
+[2026-02-09 18:56:46] [/bin/sh]: INFO:     172.18.0.168:0 - "GET /api/v1/match/points/balance HTTP/1.1" 401 Unauthorized

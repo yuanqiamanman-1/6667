@@ -1,0 +1,77 @@
+[2026-02-09 17:54:04] time="2026-02-09T09:54:04Z" level=info msg="create process: bash, command: [\"bash\",\"-c\",\"set -e;mkdir -p /oss-75ac4462 \\u0026\\u0026 /bin/s3fs modelscope-studios:/eas_mount_tmp/studio_xsihan_hhhh_310407/mnt/workspace -o url=http://oss-cn-zhangjiakou-internal.aliyuncs.com -o check_cache_dir_exist -o allow_other -o auto_unmount -o entry_timeout=600 -o nonempty -o insecure_token_file -o attr_timeout=600 -o multipart_size=24 -o complement_stat -o listobjectsv2 -o token_file=/etc/ram/credentials -o dbglevel=warn -o parallel_count=48 -f /oss-75ac4462\"]"
+[2026-02-09 17:54:04] 
+[2026-02-09 17:54:04] ██████   █████  ██       ███████  █████  ███████ 
+[2026-02-09 17:54:04] ██   ██ ██   ██ ██       ██      ██   ██ ██      
+[2026-02-09 17:54:04] ██████  ███████ ██ █████ █████   ███████ ███████ 
+[2026-02-09 17:54:04] ██      ██   ██ ██       ██      ██   ██      ██ 
+[2026-02-09 17:54:04] ██      ██   ██ ██       ███████ ██   ██ ███████ 
+[2026-02-09 17:54:04] 
+[2026-02-09 17:54:04] =========== Begin Of Program (name: bash) ===========
+[2026-02-09 17:54:21] time="2026-02-09T09:54:21Z" level=info msg="create process: /bin/sh, command: [\"/bin/sh\",\"-c\",\"/home/user/app/start.sh\"]"
+[2026-02-09 17:54:21] 
+[2026-02-09 17:54:21] ██████   █████  ██       ███████  █████  ███████ 
+[2026-02-09 17:54:21] ██   ██ ██   ██ ██       ██      ██   ██ ██      
+[2026-02-09 17:54:21] ██████  ███████ ██ █████ █████   ███████ ███████ 
+[2026-02-09 17:54:21] ██      ██   ██ ██       ██      ██   ██      ██ 
+[2026-02-09 17:54:21] ██      ██   ██ ██       ███████ ██   ██ ███████ 
+[2026-02-09 17:54:21] 
+[2026-02-09 17:54:21] =========== Begin Of Program (name: /bin/sh) ===========
+[2026-02-09 17:54:21] [/bin/sh]: ================================
+[2026-02-09 17:54:21] [/bin/sh]: 检查密码修复状态...
+[2026-02-09 17:54:21] [/bin/sh]: ================================
+[2026-02-09 17:54:21] [/bin/sh]: ! 未检测到密码修复标记，执行密码修复...
+[2026-02-09 17:54:21] [/bin/sh]: 检测到数据库连接，开始修复...
+[2026-02-09 17:54:23] [/bin/sh]: (trapped) error reading bcrypt version
+[2026-02-09 17:54:23] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+[2026-02-09 17:54:23] [/bin/sh]:     version = _bcrypt.__about__.__version__
+[2026-02-09 17:54:23] [/bin/sh]: AttributeError: module 'bcrypt' has no attribute '__about__'
+[2026-02-09 17:54:23] [/bin/sh]: 正在连接到 PostgreSQL: postgresql://root:a7J2x4IKoEN6b1wRU8sFL59VGMrBqh03...
+[2026-02-09 17:54:23] [/bin/sh]: Traceback (most recent call last):
+[2026-02-09 17:54:23] [/bin/sh]:   File "/home/user/app/backend/fix_passwords.py", line 28, in <module>
+[2026-02-09 17:54:23] [/bin/sh]:     new_hash = pwd_context.hash(new_password)
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/context.py", line 2258, in hash
+[2026-02-09 17:54:23] [/bin/sh]:     return record.hash(secret, **kwds)
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/utils/handlers.py", line 779, in hash
+[2026-02-09 17:54:23] [/bin/sh]:     self.checksum = self._calc_checksum(secret)
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/handlers/bcrypt.py", line 591, in _calc_checksum
+[2026-02-09 17:54:23] [/bin/sh]:     self._stub_requires_backend()
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/utils/handlers.py", line 2254, in _stub_requires_backend
+[2026-02-09 17:54:23] [/bin/sh]:     cls.set_backend()
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/utils/handlers.py", line 2156, in set_backend
+[2026-02-09 17:54:23] [/bin/sh]:     return owner.set_backend(name, dryrun=dryrun)
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/utils/handlers.py", line 2163, in set_backend
+[2026-02-09 17:54:23] [/bin/sh]:     return cls.set_backend(name, dryrun=dryrun)
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/utils/handlers.py", line 2188, in set_backend
+[2026-02-09 17:54:23] [/bin/sh]:     cls._set_backend(name, dryrun)
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/utils/handlers.py", line 2311, in _set_backend
+[2026-02-09 17:54:23] [/bin/sh]:     super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/utils/handlers.py", line 2224, in _set_backend
+[2026-02-09 17:54:23] [/bin/sh]:     ok = loader(**kwds)
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/handlers/bcrypt.py", line 626, in _load_backend_mixin
+[2026-02-09 17:54:23] [/bin/sh]:     return mixin_cls._finalize_backend_mixin(name, dryrun)
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/handlers/bcrypt.py", line 421, in _finalize_backend_mixin
+[2026-02-09 17:54:23] [/bin/sh]:     if detect_wrap_bug(IDENT_2A):
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/handlers/bcrypt.py", line 380, in detect_wrap_bug
+[2026-02-09 17:54:23] [/bin/sh]:     if verify(secret, bug_hash):
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/utils/handlers.py", line 792, in verify
+[2026-02-09 17:54:23] [/bin/sh]:     return consteq(self._calc_checksum(secret), chk)
+[2026-02-09 17:54:23] [/bin/sh]:   File "/usr/local/lib/python3.10/site-packages/passlib/handlers/bcrypt.py", line 655, in _calc_checksum
+[2026-02-09 17:54:23] [/bin/sh]:     hash = _bcrypt.hashpw(secret, config)
+[2026-02-09 17:54:23] [/bin/sh]: ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+[2026-02-09 17:54:23] [/bin/sh]: ❌ 密码修复失败，下次启动时将重试
+[2026-02-09 17:54:23] [/bin/sh]: ================================
+[2026-02-09 17:54:23] [/bin/sh]: 启动应用服务...
+[2026-02-09 17:54:23] [/bin/sh]: ================================
+[2026-02-09 17:54:24] [/bin/sh]: 2026-02-09 09:54:24,141 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+[2026-02-09 17:54:24] [/bin/sh]: 2026-02-09 09:54:24,143 INFO supervisord started with pid 20
+[2026-02-09 17:54:25] [/bin/sh]: 2026-02-09 09:54:25,145 INFO spawned: 'backend' with pid 37
+[2026-02-09 17:54:25] [/bin/sh]: 2026-02-09 09:54:25,196 INFO spawned: 'frontend' with pid 38
+[2026-02-09 17:54:25] [/bin/sh]: 2026-02-09 09:54:25,198 INFO spawned: 'nginx' with pid 39
+[2026-02-09 17:54:26] [/bin/sh]: 2026-02-09 09:54:26,353 INFO success: backend entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 17:54:26] [/bin/sh]: 2026-02-09 09:54:26,353 INFO success: frontend entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 17:54:26] [/bin/sh]: 2026-02-09 09:54:26,353 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[2026-02-09 17:54:36] [/bin/sh]: INFO:     Started server process [37]
+[2026-02-09 17:54:36] [/bin/sh]: INFO:     Waiting for application startup.
+[2026-02-09 17:54:36] [/bin/sh]: INFO:     Application startup complete.
+[2026-02-09 17:54:36] [/bin/sh]: INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)

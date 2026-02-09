@@ -1,28 +1,37 @@
 from datetime import datetime, timedelta, timezone
 from typing import Any, Union
 from jose import jwt
-from passlib.context import CryptContext
+import bcrypt
 from app.core.config import settings
 
 # =============================================================================
 # 安全工具 (Security Utilities)
 # 功能：提供密码哈希、密码验证和 JWT Token 生成等核心安全功能。
+# 注意：直接使用 bcrypt 库而不是 passlib，避免魔搭环境的版本兼容问题
 # =============================================================================
-
-# 配置密码哈希上下文，使用 bcrypt 算法
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
     """
     验证明文密码是否与哈希密码匹配。
     """
-    return pwd_context.verify(plain_password, hashed_password)
+    try:
+        return bcrypt.checkpw(
+            plain_password.encode('utf-8'),
+            hashed_password.encode('utf-8')
+        )
+    except Exception:
+        return False
 
 def get_password_hash(password: str) -> str:
     """
     生成密码的哈希值。
+    使用 bcrypt 直接生成，避免 passlib 的版本问题。
     """
-    return pwd_context.hash(password)
+    # 生成 salt 并哈希密码
+    salt = bcrypt.gensalt()
+    hashed = bcrypt.hashpw(password.encode('utf-8'), salt)
+    return hashed.decode('utf-8')
+
 
 def create_access_token(
     subject: Union[str, Any], expires_delta: timedelta = None

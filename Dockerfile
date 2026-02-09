@@ -30,11 +30,15 @@ COPY ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # ============ 创建日志目录 ============
 RUN mkdir -p /var/log/supervisor /var/log/nginx
 
+# ============ 复制启动脚本 ============
+COPY ./start.sh /home/user/app/start.sh
+RUN chmod +x /home/user/app/start.sh
+
 # ============ 返回工作目录 ============
 WORKDIR /home/user/app
 
 # ============ 暴露端口 7860 ============
 EXPOSE 7860
 
-# ============ 启动 Supervisor ============
-CMD ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+# ============ 使用启动脚本 ============
+CMD ["/home/user/app/start.sh"]

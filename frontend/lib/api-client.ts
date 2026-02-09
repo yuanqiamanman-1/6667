@@ -92,6 +92,15 @@ async function request<T>(endpoint: string, options: RequestOptions = {}): Promi
 
   const url = endpoint.startsWith('http') ? endpoint : joinUrl(API_BASE_URL, endpoint);
 
+  // 🐛 调试日志：检查 Token 是否正确传递
+  if (token) {
+    console.log('[API Debug] Request with token:', {
+      url,
+      tokenPrefix: token.substring(0, 20) + '...',
+      hasAuthHeader: !!config.headers
+    });
+  }
+
   const response = await fetch(url, config);
 
   if (!response.ok) {
