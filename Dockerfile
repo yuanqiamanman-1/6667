@@ -2,12 +2,11 @@ FROM modelscope-registry.cn-beijing.cr.aliyuncs.com/modelscope-repo/python:3.10
 
 WORKDIR /home/user/app
 
-# ============ 安装系统依赖 (Nginx + Supervisor + Node.js) ============
+# ============ 安装系统依赖 (Nginx + Supervisor + Node.js 20) ============
 RUN apt-get update && \
     apt-get install -y curl nginx supervisor && \
-    curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
     apt-get install -y nodejs && \
-    npm install -g npm@latest && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # ============ 复制项目文件 ============
